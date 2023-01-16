@@ -6,15 +6,25 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App () {
 
   return (
+
     <div className = "App">
-      <MyNav></MyNav>
+
+      <MyNav />
+
       <BrowserRouter>
+
         <Routes>
-          <Route path='/rfw-5k-2023/' element={<Home/>}></Route>
+
+          <Route path = "/rfw-5k-2023/" element={<Home/>}></Route>
+
         </Routes>
+
       </BrowserRouter>
+
     </div>
+
   );
+
 }
 
 export default App;

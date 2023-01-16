@@ -33,5 +33,15 @@
 }
 
 .App-link {
+
   color: #61dafb;
+
 }
+
+::-webkit-scrollbar { background: var(--dark-grey); width: 7px; }
+
+::-webkit-scrollbar-track { border-radius: 10px; }
+
+::-webkit-scrollbar-thumb { background: #45454579; border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover { background: #8d8d8d79; }
