@@ -9,6 +9,11 @@ export const Home = () => {
             #dehydratekenya
 
         </header>
+        <header className = "Gradient App-header">
+
+            #dehydratekenya
+
+        </header>
     </div>
   )
 }
