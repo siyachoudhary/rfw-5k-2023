@@ -1,19 +1,25 @@
 import React from 'react'
-import './home.css'
+import './Home.css'
 
 export const Home = () => {
+
   return (
+
     <div>
+
         <header className = "Gradient App-header">
 
-            #dehydratekenya
+          #dehydratekenya
 
         </header>
+
         <header className = "Gradient App-header">
 
-            #dehydratekenya
+          #dehydratekenya
 
         </header>
+
     </div>
+
   )
 }
