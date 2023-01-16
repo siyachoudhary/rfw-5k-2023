@@ -21,6 +21,7 @@ export const MyNav = () => {
                     <Nav.Link href="/rfw-5k-2023/about" className='navItem'>About</Nav.Link>
                     <Nav.Link href="/rfw-5k-2023/impact" className='navItem'>Impact</Nav.Link>
                     <Nav.Link href="/rfw-5k-2023/team" className='navItem'>Team</Nav.Link>
+                    <Nav.Link href="/rfw-5k-2023/sign_up" className='navItem'>Sign Up</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
