@@ -10,3 +10,9 @@
 .container{
     max-width: 175vh;
 }
+
+.navItem{
+    margin-left: 2vh;
+    text-align: right;
+    
+}

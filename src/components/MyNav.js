@@ -17,10 +17,10 @@ export const MyNav = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto"></Nav>
                 <Nav>
-                    <Nav.Link href="#deets">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                    Dank memes
-                    </Nav.Link>
+                    <Nav.Link href="/rfw-5k-2023/home" className='navItem'>Home</Nav.Link>
+                    <Nav.Link href="/rfw-5k-2023/about" className='navItem'>About</Nav.Link>
+                    <Nav.Link href="/rfw-5k-2023/impact" className='navItem'>Impact</Nav.Link>
+                    <Nav.Link href="/rfw-5k-2023/team" className='navItem'>Team</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
