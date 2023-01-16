@@ -7,7 +7,7 @@ function App () {
 
       <header className = "Gradient App-header">
 
-        RUN FOR WATER
+        #dehydratekenya
 
       </header>
 

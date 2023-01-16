@@ -5,9 +5,9 @@
   --barlow: 'Barlow Semi Condensed', sans-serif;
   --lexend: 'Lexend', sans-serif;
   --dark-grey: #0c0c0c;
-  --green: #51ff71;
-  --blue: #008cff;
-  --gradient: linear-gradient(135deg, var(--green), var(--blue));
+  --purple: #c464ff;
+  --blue: #0de3ff;
+  --gradient: linear-gradient(135deg, var(--purple), var(--blue));
 
 }
 
