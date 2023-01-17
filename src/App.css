@@ -20,24 +20,6 @@
   
 }
 
-.App-header {
-  
-  background-color: var(--dark-grey);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 18vmin);
-
-}
-
-.App-link {
-
-  color: #61dafb;
-
-}
-
 ::-webkit-scrollbar { background: var(--dark-grey); width: 7px; }
 
 ::-webkit-scrollbar-track { border-radius: 10px; }

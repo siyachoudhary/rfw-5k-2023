@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import './Home.css'
 
 export const Home = () => {
 
@@ -18,6 +18,7 @@ export const Home = () => {
           #dehydratekenya
 
         </header>
+        
     </div>
 
   )
