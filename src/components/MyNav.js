@@ -17,7 +17,7 @@ export const MyNav = () => {
 
           <Container>
 
-            <Navbar.Brand href = "/rfw-5k-2023/"> <img src = "" alt = "RFW" /> </Navbar.Brand>
+            <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/hand_logo.png"} alt = "RFW" /> </Navbar.Brand>
             <Navbar.Toggle aria-controls = "responsive-navbar-nav" className = "toggleBtn"/>
 
             <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse">
@@ -26,7 +26,7 @@ export const MyNav = () => {
 
               <Nav className = "links">
 
-                <Nav.Link href = "/rfw-5k-2023/" className = "navItem">Home</Nav.Link>
+                <Nav.Link href = "/rfw-5k-2023" className = "navItem">Home</Nav.Link>
                 <Nav.Link href = "/rfw-5k-2023/about" className = "navItem">About</Nav.Link>
                 <Nav.Link href = "/rfw-5k-2023/impact" className = "navItem">Impact</Nav.Link>
                 <Nav.Link href = "/rfw-5k-2023/team" className = "navItem">Team</Nav.Link>
