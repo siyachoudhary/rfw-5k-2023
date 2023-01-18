@@ -55,16 +55,14 @@
 
     }
 
-    .navbar-collapse.show { 
-        left: 50vw;
-    }
-
-
+    .navbar-collapse.show { left: 50vw; }
 
   }
 
-  .navbar-brand img {
+.navbar-brand img {
+
+    width: calc(5vh + 1vw);
     height: calc(5vh + 1vw);
     margin-left: 1vh;
-    width: calc(5vh + 1vw);
+    
 }

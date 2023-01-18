@@ -9,28 +9,41 @@ import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
 
 export const MyNav = () => {
-    const [y, setY] = useState(0);
 
-    // if user scrolls then nav dropdown collapses
-  const handleNavigation = (e) => {
+  const [y, setY] = useState(0);
+
+  const handleNavigation = (e) => { // all this runs on scroll
+
     const window = e.currentTarget;
-    if (y > window.scrollY || y < window.scrollY) {
-        if(window.innerWidth<=991){
-            document.getElementById('responsive-navbar-nav').classList.add("collapsing")
-            document.getElementById('toggle_btn').classList.add("collapsed")
-        }
-        // console.log(document.getElementById('toggle_btn'))
+
+    if (y > window.scrollY || y < window.scrollY) { // if current position is diff than pos when menu was opened
+
+      console.log("scrolling");
+
+      if (window.innerWidth <= 991 && document.getElementById('responsive-navbar-nav').classList.contains("show")) { // and in mobile mode
+
+        console.log("mobile mode & menu open");
+
+        // collapse
+        document.getElementById('responsive-navbar-nav').classList.remove("show");
+        document.getElementById('responsive-navbar-nav').classList.add("collapsing");
+        document.getElementById('toggle_btn').setAttribute("aria-expanded", "false");
+
+      }
+
     }
-    setY(window.y)
+
+    setY(window.y);
+
   };
 
   useEffect(() => {
-    setY(window.scrollY);
+
+    setY(window.scrollY); // get window scroll positon
 
     window.addEventListener("scroll", (e) => handleNavigation(e));
 
   }, []);
-
 
   return (
 
@@ -41,7 +54,7 @@ export const MyNav = () => {
           <Container>
 
             <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/hand_logo.png"} alt = "RFW" /> </Navbar.Brand>
-            <Navbar.Toggle aria-controls = "responsive-navbar-nav" className = "toggleBtn" id="toggle_btn"/>
+            <Navbar.Toggle aria-controls = "responsive-navbar-nav" className = "toggleBtn" id = "toggle_btn" />
 
             <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse">
 
