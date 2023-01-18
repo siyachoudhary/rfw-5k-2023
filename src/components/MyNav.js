@@ -11,11 +11,15 @@ import { useState, useEffect } from "react";
 export const MyNav = () => {
     const [y, setY] = useState(0);
 
+    // if user scrolls then nav dropdown collapses
   const handleNavigation = (e) => {
     const window = e.currentTarget;
     if (y > window.scrollY || y < window.scrollY) {
-        const menuToggle = document.getElementById('navbarSupportedContent')
-        // const bsCollapse = new bootstrap.Collapse(menuToggle)
+        if(window.innerWidth<=991){
+            document.getElementById('responsive-navbar-nav').classList.add("collapsing")
+            document.getElementById('toggle_btn').classList.add("collapsed")
+        }
+        console.log(document.getElementById('toggle_btn'))
     }
     setY(window.y)
   };
@@ -27,6 +31,7 @@ export const MyNav = () => {
 
   }, []);
 
+
   return (
 
     <div>
@@ -36,7 +41,7 @@ export const MyNav = () => {
           <Container>
 
             <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/hand_logo.png"} alt = "RFW" /> </Navbar.Brand>
-            <Navbar.Toggle aria-controls = "responsive-navbar-nav" className = "toggleBtn"/>
+            <Navbar.Toggle aria-controls = "responsive-navbar-nav" className = "toggleBtn" id="toggle_btn"/>
 
             <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse">
 
