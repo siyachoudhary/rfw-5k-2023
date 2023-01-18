@@ -19,7 +19,7 @@ export const MyNav = () => {
             document.getElementById('responsive-navbar-nav').classList.add("collapsing")
             document.getElementById('toggle_btn').classList.add("collapsed")
         }
-        console.log(document.getElementById('toggle_btn'))
+        // console.log(document.getElementById('toggle_btn'))
     }
     setY(window.y)
   };
