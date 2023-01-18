@@ -5,9 +5,32 @@ import "./MyNav.css"
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
+import { useState, useEffect } from "react";
 
 export const MyNav = () => {
+    const [y, setY] = useState(0);
+
+    // if user scrolls then nav dropdown collapses
+  const handleNavigation = (e) => {
+    const window = e.currentTarget;
+    if (y > window.scrollY || y < window.scrollY) {
+        if(window.innerWidth<=991){
+            document.getElementById('responsive-navbar-nav').classList.add("collapsing")
+            document.getElementById('toggle_btn').classList.add("collapsed")
+        }
+        // console.log(document.getElementById('toggle_btn'))
+    }
+    setY(window.y)
+  };
+
+  useEffect(() => {
+    setY(window.scrollY);
+
+    window.addEventListener("scroll", (e) => handleNavigation(e));
+
+  }, []);
+
 
   return (
 
@@ -18,7 +41,7 @@ export const MyNav = () => {
           <Container>
 
             <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/hand_logo.png"} alt = "RFW" /> </Navbar.Brand>
-            <Navbar.Toggle aria-controls = "responsive-navbar-nav" className = "toggleBtn"/>
+            <Navbar.Toggle aria-controls = "responsive-navbar-nav" className = "toggleBtn" id="toggle_btn"/>
 
             <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse">
 
