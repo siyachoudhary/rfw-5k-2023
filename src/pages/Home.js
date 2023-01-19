@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import "./AllPages.css"
 
 export const Home = () => {
 
@@ -9,13 +10,13 @@ export const Home = () => {
 
         <header className = "Gradient App-header">
 
-          #dehydratekenya
+          #Run For Water
 
         </header>
 
         <header className = "Gradient App-header">
 
-          #dehydratekenya
+          #Run For Water
 
         </header>
         
