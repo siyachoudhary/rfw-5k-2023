@@ -13,39 +13,40 @@ export const MyNav = () => {
 
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
 
-  // const [y, setY] = useState(0);
+  const [y, setY] = useState(0);
 
-  // const handleNavigation = (e) => { // all this runs on scroll
+  const handleNavigation = (e) => { // all this runs on scroll
 
-  //   const window = e.currentTarget;
+    const window = e.currentTarget;
 
-  //   if (y > window.scrollY || y < window.scrollY) { // if current position is diff than pos when menu was opened
+    if (y > window.scrollY || y < window.scrollY) { // if current position is diff than pos when menu was opened
 
-  //     console.log("scrolling");
+      // console.log("scrolling");
 
-  //     if (window.innerWidth <= 991 && document.getElementById('responsive-navbar-nav').classList.contains("show")) { // and in mobile mode
+      if (window.innerWidth <= 991 && document.getElementById('responsive-navbar-nav').classList.contains("show")) { // and in mobile mode
 
-  //       console.log("mobile mode & menu open");
+        // console.log("mobile mode & menu open");
 
-  //       // collapse
-  //       document.getElementById('responsive-navbar-nav').classList.remove("show");
-  //       document.getElementById("toggle_btn").classList.remove("open")
+        // collapse
+        document.getElementById('responsive-navbar-nav').classList.remove("show");
+        document.getElementById("toggle_btn").classList.remove("open")
+        setNavOpen(navOpen=>!navOpen)
 
-  //     }
+      }
 
-  //   }
+    }
 
-  //   setY(window.y);
+    setY(window.y);
 
-  // };
+  };
 
   useEffect(() => {
-    // setY(window.scrollY); // get window scroll positon
-    // window.addEventListener("scroll", (e) => handleNavigation(e));
+    setY(window.scrollY); // get window scroll positon
+    window.addEventListener("scroll", (e) => handleNavigation(e));
 
     if(windowSize.current[0] <= 991){
-      document.getElementById('responsive-navbar-nav').classList.add("collapsing");
-      document.getElementById('responsive-navbar-nav').classList.remove("collapse");
+    document.getElementById('responsive-navbar-nav').classList.add("collapsing");
+    document.getElementById('responsive-navbar-nav').classList.remove("collapse");
     }
 
   }, []);
@@ -53,7 +54,7 @@ export const MyNav = () => {
   const toggleNav = () => {
     if(windowSize.current[0] <= 991){
       document.getElementById('responsive-navbar-nav').classList.add("collapsing");
-      console.log(document.getElementById('responsive-navbar-nav').classList)
+      // console.log(document.getElementById('responsive-navbar-nav').classList)
       if(!navOpen){
         document.getElementById("toggle_btn").classList.add("open")
         // document.getElementById('responsive-navbar-nav').classList.remove("collapse");
