@@ -28,6 +28,14 @@
 }
 
 @media screen and (max-width: 991px) {
+    .navItem {
+
+        margin-left: auto;
+        margin-right: 2vh;
+        font-size: 2vh;
+        width: fit-content;
+    
+    }
 
     #responsive-navbar-nav {
 
