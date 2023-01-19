@@ -37,7 +37,7 @@
         top: 0;
         right: 0;
         bottom: 0;
-        width: 50vw;
+        width: 100vw;
         padding: 20vw 2vw;
         transition: all .3s ease-in-out;
         outline: none;
@@ -54,7 +54,7 @@
 
     }
 
-    .navbar-collapse.show { left: 50vw; }
+    .navbar-collapse.show { left: 0vw; }
 
   }
 

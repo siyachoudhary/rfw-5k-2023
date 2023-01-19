@@ -16,29 +16,35 @@ export const MyNav = () => {
   const [y, setY] = useState(0);
 
   const handleNavigation = (e) => { // all this runs on scroll
-
     const window = e.currentTarget;
-
     if (y > window.scrollY || y < window.scrollY) { // if current position is diff than pos when menu was opened
-
-      // console.log("scrolling");
-
       if (window.innerWidth <= 991 && document.getElementById('responsive-navbar-nav').classList.contains("show")) { // and in mobile mode
-
-        // console.log("mobile mode & menu open");
-
         // collapse
         document.getElementById('responsive-navbar-nav').classList.remove("show");
         document.getElementById("toggle_btn").classList.remove("open")
         setNavOpen(navOpen=>!navOpen)
-
       }
-
     }
 
     setY(window.y);
 
   };
+
+  const handleClickOutside = () => { // all this runs on scroll
+    // const window = e.currentTarget;
+    console.log("hey")
+      if (window.innerWidth <= 991 && document.getElementById('responsive-navbar-nav').classList.contains("show")) { // and in mobile mode
+        // collapse
+        document.getElementById('responsive-navbar-nav').classList.remove("show");
+        document.getElementById("toggle_btn").classList.remove("open")
+        setNavOpen(navOpen=>!navOpen)
+      }
+
+    setY(window.y);
+
+  };
+
+  
 
   useEffect(() => {
     setY(window.scrollY); // get window scroll positon
@@ -54,10 +60,8 @@ export const MyNav = () => {
   const toggleNav = () => {
     if(windowSize.current[0] <= 991){
       document.getElementById('responsive-navbar-nav').classList.add("collapsing");
-      // console.log(document.getElementById('responsive-navbar-nav').classList)
       if(!navOpen){
         document.getElementById("toggle_btn").classList.add("open")
-        // document.getElementById('responsive-navbar-nav').classList.remove("collapse");
         document.getElementById('responsive-navbar-nav').classList.add("show");
       }else{
         document.getElementById("toggle_btn").classList.remove("open")
@@ -84,7 +88,7 @@ export const MyNav = () => {
             </button>
             
 
-            <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse">
+            <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse" onClick={handleClickOutside}>
 
               <Nav className = "me-auto" />
 
