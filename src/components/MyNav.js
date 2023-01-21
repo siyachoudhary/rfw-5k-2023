@@ -115,7 +115,7 @@ export const MyNav = () => {
             </button>
             
 
-            <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse" onClick={handleClickOutside}>
+            <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse" onClick = {handleClickOutside}>
 
               <Nav className = "me-auto" />
 
