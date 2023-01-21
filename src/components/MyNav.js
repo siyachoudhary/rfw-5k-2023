@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./MyNav.css"
+import "./myNav.css"
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -28,12 +28,27 @@ export const MyNav = () => {
         setNavOpen(navOpen => !navOpen);
 
       }
-
     }
 
     setY(window.y);
 
   };
+
+  const handleClickOutside = () => { // all this runs on scroll
+    // const window = e.currentTarget;
+    console.log("hey")
+      if (window.innerWidth <= 991 && document.getElementById('responsive-navbar-nav').classList.contains("show")) { // and in mobile mode
+        // collapse
+        document.getElementById('responsive-navbar-nav').classList.remove("show");
+        document.getElementById("toggle_btn").classList.remove("open")
+        setNavOpen(navOpen=>!navOpen)
+      }
+
+    setY(window.y);
+
+  };
+
+  
 
   useEffect(() => {
 
@@ -91,7 +106,7 @@ export const MyNav = () => {
             </button>
             
 
-            <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse">
+            <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse" onClick={handleClickOutside}>
 
               <Nav className = "me-auto" />
 
