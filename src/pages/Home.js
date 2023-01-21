@@ -16,7 +16,7 @@ export const Home = () => {
 
         <header className = "Gradient App-header">
 
-          #dehydratekenya
+          now its 700
 
         </header>
         
