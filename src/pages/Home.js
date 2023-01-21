@@ -8,7 +8,7 @@ export const Home = () => {
 
     <div>
 
-        <header className = "Gradient App-header">
+        <header className = "Shadowed Gradient App-header">
 
           RUN FOR WATER
 
