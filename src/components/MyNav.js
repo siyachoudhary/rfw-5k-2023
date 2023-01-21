@@ -30,6 +30,12 @@ export const MyNav = () => {
 
       }
 
+      else if (window.innerWidth > 991 && document.getElementById("responsive-navbar-nav").classList.contains("show")) {
+
+        document.getElementById("responsive-navbar-nav").classList.remove("show");
+
+      }
+
     }
 
     setY(window.y);
