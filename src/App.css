@@ -22,8 +22,8 @@
 
 .Shadowed {
 
-  -webkit-filter: drop-shadow(0 0 10px #000000);
-  filter: drop-shadow(0 0 10px #000000);
+  -webkit-filter: drop-shadow(0 0 5px #000000);
+  filter: drop-shadow(0 0 5px #000000);
 
 }
 
