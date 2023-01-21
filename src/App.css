@@ -2,11 +2,11 @@
 
 :root {
 
-  --barlow: 'Barlow Semi Condensed', sans-serif;
-  --lexend: 'Lexend', sans-serif;
+  --chunky: 'Lexend', sans-serif;
+  --norm: 'Barlow Semi Condensed', sans-serif;
   --dark-grey: #0c0c0c;
-  --purple: #c464ff;
-  --blue: #0de3ff;
+  --purple: #ff64ff;
+  --blue: #0dc7ff;
   --gradient: linear-gradient(135deg, var(--purple), var(--blue));
 
 }
@@ -15,9 +15,16 @@
 .App {
 
   text-align: center;
-  font-family: var(--lexend);
+  font-family: var(--chunky);
   background-color: var(--dark-grey);
   
+}
+
+.Shadowed {
+
+  -webkit-filter: drop-shadow(0 0 5px #000000);
+  filter: drop-shadow(0 0 5px #000000);
+
 }
 
 ::-webkit-scrollbar { background: var(--dark-grey); width: 7px; }

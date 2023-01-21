@@ -8,15 +8,15 @@ export const Home = () => {
 
     <div>
 
-        <header className = "Gradient App-header">
+        <header className = "Shadowed Gradient App-header">
 
-          hi hello howdy
+          RUN FOR WATER
 
         </header>
 
         <header className = "Gradient App-header">
 
-          testing 1 2 3
+          now its 700
 
         </header>
         
