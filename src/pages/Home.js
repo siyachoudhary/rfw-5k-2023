@@ -10,7 +10,7 @@ export const Home = () => {
 
         <header className = "Gradient App-header">
 
-          hi hello howdy
+          RUN FOR WATER
 
         </header>
 
