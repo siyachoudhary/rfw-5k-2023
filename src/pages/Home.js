@@ -10,13 +10,13 @@ export const Home = () => {
 
         <header className = "Gradient App-header">
 
-          hi hello howdy
+          RUN FOR WATER
 
         </header>
 
         <header className = "Gradient App-header">
 
-          testing 1 2 3
+          #dehydratekenya
 
         </header>
         

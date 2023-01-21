@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Lexend:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Montserrat:ital,wght@1,800&display=swap');
 
 :root {
 
-  --barlow: 'Barlow Semi Condensed', sans-serif;
-  --lexend: 'Lexend', sans-serif;
+  --chunky: 'Montserrat', sans-serif;
+  --norm: 'Barlow Semi Condensed', sans-serif;
   --dark-grey: #0c0c0c;
   --purple: #c464ff;
   --blue: #0de3ff;
@@ -15,7 +15,7 @@
 .App {
 
   text-align: center;
-  font-family: var(--lexend);
+  font-family: var(--chunky);
   background-color: var(--dark-grey);
   
 }
