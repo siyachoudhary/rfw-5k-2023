@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Rubik:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Lexend:wght@700&display=swap');
 
 :root {
 
-  --chunky: 'Rubik', sans-serif;
+  --chunky: 'Lexend', sans-serif;
   --norm: 'Barlow Semi Condensed', sans-serif;
   --dark-grey: #0c0c0c;
   --purple: #ff64ff;
