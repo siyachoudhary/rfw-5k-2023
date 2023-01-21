@@ -8,7 +8,7 @@ export const Home = () => {
 
     <div>
 
-        <header className = "Gradient App-header">
+        <header className = "Shadowed Gradient App-header">
 
           RUN FOR WATER
 
@@ -16,7 +16,7 @@ export const Home = () => {
 
         <header className = "Gradient App-header">
 
-          testing 1 2 3
+          now its 700
 
         </header>
         

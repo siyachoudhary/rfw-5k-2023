@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./myNav.css"
+import "./MyNav.css"
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -9,6 +9,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect, useRef } from "react";
 
 export const MyNav = () => {
+  
   const [navOpen, setNavOpen] = useState(false);
 
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
@@ -21,28 +22,35 @@ export const MyNav = () => {
 
     if (y > window.scrollY || y < window.scrollY) {
 
-      if (window.innerWidth <= 991 && document.getElementById('responsive-navbar-nav').classList.contains("show")) {
+      if (window.innerWidth <= 991 && document.getElementById("responsive-navbar-nav").classList.contains("show")) {
 
-        document.getElementById('responsive-navbar-nav').classList.remove("show");
+        document.getElementById("responsive-navbar-nav").classList.remove("show");
         document.getElementById("toggle_btn").classList.remove("open");
         setNavOpen(navOpen => !navOpen);
 
       }
+
+      else if (window.innerWidth > 991 && document.getElementById("responsive-navbar-nav").classList.contains("show")) {
+
+        document.getElementById("responsive-navbar-nav").classList.remove("show");
+
+      }
+
     }
 
     setY(window.y);
 
   };
 
-  const handleClickOutside = () => { // all this runs on scroll
-    // const window = e.currentTarget;
-    console.log("hey")
-      if (window.innerWidth <= 991 && document.getElementById('responsive-navbar-nav').classList.contains("show")) { // and in mobile mode
-        // collapse
-        document.getElementById('responsive-navbar-nav').classList.remove("show");
-        document.getElementById("toggle_btn").classList.remove("open")
-        setNavOpen(navOpen=>!navOpen)
-      }
+  const handleClickOutside = () => {
+
+    if (window.innerWidth <= 991 && document.getElementById("responsive-navbar-nav").classList.contains("show")) {
+
+      document.getElementById("responsive-navbar-nav").classList.remove("show");
+      document.getElementById("toggle_btn").classList.remove("open")
+      setNavOpen(navOpen => !navOpen)
+
+    }
 
     setY(window.y);
 
@@ -57,8 +65,8 @@ export const MyNav = () => {
 
     if (windowSize.current[0] <= 991) {
 
-      document.getElementById('responsive-navbar-nav').classList.add("collapsing");
-      document.getElementById('responsive-navbar-nav').classList.remove("collapse");
+      document.getElementById("responsive-navbar-nav").classList.add("collapsing");
+      document.getElementById("responsive-navbar-nav").classList.remove("collapse");
 
     }
 
@@ -68,19 +76,19 @@ export const MyNav = () => {
 
     if (windowSize.current[0] <= 991) {
 
-      document.getElementById('responsive-navbar-nav').classList.add("collapsing");
+      document.getElementById("responsive-navbar-nav").classList.add("collapsing");
 
       if (!navOpen) {
 
         document.getElementById("toggle_btn").classList.add("open")
-        document.getElementById('responsive-navbar-nav').classList.add("show");
+        document.getElementById("responsive-navbar-nav").classList.add("show");
 
       }
       
       else {
 
         document.getElementById("toggle_btn").classList.remove("open")
-        document.getElementById('responsive-navbar-nav').classList.remove("show");
+        document.getElementById("responsive-navbar-nav").classList.remove("show");
 
       }
 
@@ -98,15 +106,16 @@ export const MyNav = () => {
 
           <Container>
 
-            <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/hand_logo.png"} alt = "RFW" /> </Navbar.Brand>
-
+            <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/logo.png"} alt = "RFW" className = "Shadowed Col" /> </Navbar.Brand>
+            <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/logo_bw.png"} alt = "RFW" className = "Shadowed BW" /> </Navbar.Brand>
+            
             <button className = "navbar-toggler second-button toggleBtn" type = "button" data-toggle = "collapse" data-target = "#responsive-navbar-nav"
               aria-controls = "responsive-navbar-nav" aria-expanded = "false" aria-label = "Toggle navigation" onClick = {toggleNav}>
               <div className = "animated-icon2" id={"toggle_btn"}><span></span><span></span><span></span><span></span></div>
             </button>
             
 
-            <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse" onClick={handleClickOutside}>
+            <Navbar.Collapse id = "responsive-navbar-nav" className = "navbar-collapse" onClick = {handleClickOutside}>
 
               <Nav className = "me-auto" />
 
