@@ -18,14 +18,14 @@ export const Impact = () => {
                 <h3>RUNNERS.</h3>
             </div>
 
-            <div class="vl1"></div>
+            <div className="vl1"></div>
 
             <div className='impactStats '>
               <h1>25</h1>
               <h3>VOLUNTEERS.</h3>
             </div>
 
-            <div class="vl2"></div>
+            <div className="vl2"></div>
 
             <div className='impactStats '>
                 <h1>700+</h1>
