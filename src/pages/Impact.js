@@ -37,7 +37,7 @@ export const Impact = () => {
                 <h1>1</h1>
                 <h3>CAUSE.</h3>
           </div>
-          <h6>These numbers report all of our impact up-to-date</h6>
+          <h6 className='disclaimer'>These numbers report all of our impact up-to-date</h6>
       </div>
   )
 
