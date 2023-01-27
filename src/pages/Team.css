@@ -1,0 +1,99 @@
+.content {
+
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.carouselContainer {
+
+    width: 28vh;
+    height: 45vh;
+    perspective: 1000px;
+
+}
+  
+.carousel {
+
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+}
+  
+.item {
+
+    position: absolute;
+    width: 28vh;
+    height: 45vh;
+    line-height: 45vh;
+    font-size: 5vh;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 0 0 15px;
+
+}
+
+.a {
+
+    transform: rotateY(0deg) translateZ(32vh);
+    background: rgba(65, 65, 65, 0.5);
+
+}
+
+.b {
+
+    transform: rotateY(60deg) translateZ(32vh);
+    background: rgba(65, 65, 65, 0.5);
+  
+}
+
+.c {
+
+    transform: rotateY(120deg) translateZ(32vh);
+    background: rgba(65, 65, 65, 0.5);
+
+}
+
+.d {
+
+    transform: rotateY(180deg) translateZ(32vh);
+    background: rgba(65, 65, 65, 0.5);
+
+}
+
+.e {
+
+    transform: rotateY(240deg) translateZ(32vh);
+    background: rgba(65, 65, 65, 0.5);
+
+} 
+
+.f {
+
+    transform: rotateY(300deg) translateZ(32vh);
+    background: rgba(65, 65, 65, 0.5);
+
+}
+
+.next, .prev {
+
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    cursor: pointer;
+    font-size: 6vh;
+    transition: all 0.3s;
+    top: 45vh;
+
+}
+
+.next:hover, .prev:hover { transform: scale(1.2); }
+
+.next { right: 10vh; }
+.prev { left: 10vh; }

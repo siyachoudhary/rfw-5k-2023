@@ -12,13 +12,9 @@
   margin-left: 2vh;
   margin-right: 2vh;
   font-size: 2vh;
-  text-align: right;
+  text-align: center;
   font-family: var(--norm);
 
-}
-
-.active{
-  font-weight: bold;
 }
 
 .toggleBtn {
@@ -39,8 +35,6 @@
   width: calc(5vh + 1vw);
   height: calc(5vh + 1vw);
   z-index: 6;
-  /* filter: brightness(75%); */
-  /* transition: all 0.3s ease-in-out; */
 
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -49,12 +43,7 @@
     
 }
 
-.navbar-brand img:hover {
-
-  /* filter: brightness(100%); */
-  opacity: 0;
-
-}
+.navbar-brand img:hover { opacity: 0; }
 
 @media screen and (max-width: 991px) {
 

@@ -111,7 +111,7 @@ export const MyNav = () => {
             
             <button className = "navbar-toggler second-button toggleBtn" type = "button" data-toggle = "collapse" data-target = "#responsive-navbar-nav"
               aria-controls = "responsive-navbar-nav" aria-expanded = "false" aria-label = "Toggle navigation" onClick = {toggleNav}>
-              <div className = "animated-icon2" id={"toggle_btn"}><span></span><span></span><span></span><span></span></div>
+              <div className = "animated-icon2" id = {"toggle_btn"}><span></span><span></span><span></span><span></span></div>
             </button>
             
 
@@ -120,11 +120,11 @@ export const MyNav = () => {
               <Nav className = "me-auto" />
 
               <Nav className = "links">
-                <CustomLink href={"/rfw-5k-2023/"}>Home</CustomLink>
-                <CustomLink href={"/rfw-5k-2023/about"}>About</CustomLink>
-                <CustomLink href={"/rfw-5k-2023/impact"}>Impact</CustomLink>
-                <CustomLink href={"/rfw-5k-2023/team"}>Team</CustomLink>
-                <CustomLink href={"/rfw-5k-2023/contribute"}>Contribute</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/"}>Home</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/about"}>About</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/impact"}>Impact</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/team"}>Team</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/contribute"}>Contribute</CustomLink>
 
               </Nav>
 
