@@ -12,15 +12,13 @@ export const Team = () => {
         
     document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
     setAngle(angle => angle - 60);
-    console.log(angle);
-    
+
   }
 
   const prev = (e) => {
         
     document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
     setAngle(angle => angle + 60);
-    console.log(angle);
     
   }
 
@@ -30,7 +28,7 @@ export const Team = () => {
 
         <div className = "carouselContainer">
 
-          <div class = "carousel">
+          <div className = "carousel">
 
             <div className = "item a">1</div>
             <div className = "item b">2</div>
