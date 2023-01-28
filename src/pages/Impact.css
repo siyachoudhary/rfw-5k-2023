@@ -71,7 +71,7 @@
 
     .moneyRaised  {
 
-        width: 90vw;
+        width: 75vw;
         border-bottom: #363636 3px solid;
         margin: 0;
         padding: 2vh;
@@ -81,7 +81,7 @@
 
     .bottomStats div {
 
-        width: 90vw;
+        width: 50vw;
         border-bottom: #363636 3px solid;
         margin: 0;
         padding: 2vh;
@@ -98,4 +98,5 @@
         margin: auto;
         
     }
+    
   }
