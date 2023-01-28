@@ -52,10 +52,6 @@
     .moneyRaised h1 { font-size: 20vw; }
     
     .moneyRaised h3 { font-size: 3.5vw; }
-    
-    .cause h1 { font-size: 7vw; }
-    
-    .cause h3 { font-size: 2vw; }
 
   }
 
@@ -64,13 +60,42 @@
     .bottomStats { justify-content: center; }
     
     .bottomStats div { margin: 10vw 0; }
-    
-    .moneyRaised h1 { font-size: 20vw; }
-    
-    .moneyRaised h3 { font-size: 7vw; }
-    
-    .cause h1 { font-size: 18vw; }
-    
-    .cause h3 { font-size: 5vw; }
 
+    .bottomStats h1{ font-size: 10vw; }
+
+    .bottomStats h3 { font-size: 4vw; }
+    
+    .moneyRaised h1 { font-size: 23vw; }
+    
+    .moneyRaised h3 { font-size: 10vw; }
+
+    .moneyRaised  {
+
+        width: 90vw;
+        border-bottom: #363636 3px solid;
+        margin: 0;
+        padding: 2vh;
+        margin: auto;
+        
+    }
+
+    .bottomStats div {
+
+        width: 90vw;
+        border-bottom: #363636 3px solid;
+        margin: 0;
+        padding: 2vh;
+        margin: auto;
+        
+    }
+
+    .bottomStats div:last-child {
+
+        width: 90vw;
+        border-bottom: none;
+        margin: 0;
+        padding: 2vh;
+        margin: auto;
+        
+    }
   }
