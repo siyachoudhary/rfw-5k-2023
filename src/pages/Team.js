@@ -1,5 +1,6 @@
 import React from 'react'
 import './Team.css'
+import { Card } from '../components/Card.js'
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
 
 import { useState } from "react";
@@ -8,17 +9,26 @@ export const Team = () => {
 
   const [angle, setAngle] = useState(0);
 
+  const load = (e) => {
+
+    document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
+    console.log(angle);
+
+  }
+
   const next = (e) => {
         
+    setAngle(angle => angle - 24);
     document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
-    setAngle(angle => angle - 60);
+    console.log(angle);
 
   }
 
   const prev = (e) => {
         
+    setAngle(angle => angle + 24);
     document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
-    setAngle(angle => angle + 60);
+    console.log(angle);
     
   }
 
@@ -28,14 +38,23 @@ export const Team = () => {
 
         <div className = "carouselContainer">
 
-          <div className = "carousel">
+          <div className = "carousel" onLoad = {load}>
 
-            <div className = "item a">1</div>
-            <div className = "item b">2</div>
-            <div className = "item c">3</div>
-            <div className = "item d">4</div>
-            <div className = "item e">5</div>
-            <div className = "item f">6</div>
+            <Card index = "a" name = "1"/>
+            <Card index = "b" name = "2"/>
+            <Card index = "c" name = "3"/>
+            <Card index = "d" name = "4"/>
+            <Card index = "e" name = "5"/>
+            <Card index = "f" name = "6"/>
+            <Card index = "g" name = "7"/>
+            <Card index = "h" name = "8"/>
+            <Card index = "i" name = "9"/>
+            <Card index = "j" name = "10"/>
+            <Card index = "k" name = "11"/>
+            <Card index = "l" name = "12"/>
+            <Card index = "m" name = "13"/>
+            <Card index = "n" name = "14"/>
+            <Card index = "o" name = "15"/>
 
           </div>
 

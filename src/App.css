@@ -9,6 +9,8 @@
   --blue: #0dc7ff;
   --gradient: linear-gradient(135deg, var(--purple), var(--blue));
 
+  --z-spacing: 72vh;
+
 }
 
 
