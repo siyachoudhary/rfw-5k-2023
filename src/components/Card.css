@@ -6,26 +6,28 @@
     justify-content: center;
     width: 20vh;
     height: 30vh;
-    font-size: 5vh;
+    font-size: 9vh;
     text-align: center;
     color: #FFF;
     opacity: 0.9;
     border-radius: 10px;
     box-shadow: rgb(0, 0, 0) 0 0 15px;
-    background: rgb(105, 105, 105);
-    border-top:rgb(100, 100, 100) 2px solid;
-    border-left:rgb(100, 100, 100) 2px solid;
+    background: rgb(120, 120, 120);
+    border-top:rgb(125, 125, 125) 2px solid;
+    border-left:rgb(125, 125, 125) 2px solid;
     border-bottom:rgb(40, 40, 40) 2px solid;
     border-right:rgb(40, 40, 40) 2px solid;
 
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 
 }
 
 .item:hover {
 
     box-shadow: rgb(0, 0, 0) 0 10px 25px;
-    background: rgb(115, 115, 115);
+    background: rgb(160, 110, 171);
+    border: rgb(169, 130, 255) 5px solid;
+    color: rgba(255, 255, 255, 0.4);
 
 }
 
