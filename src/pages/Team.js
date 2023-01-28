@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Team.css'
 import { Card } from '../components/Card.js'
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
@@ -9,18 +9,12 @@ export const Team = () => {
 
   const [angle, setAngle] = useState(0);
 
-  const load = (e) => {
-
-    document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
-    console.log(angle);
-
-  }
+  useEffect(() => { document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)"; }, [angle]);
 
   const next = (e) => {
         
     setAngle(angle => angle - 24);
     document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
-    console.log(angle);
 
   }
 
@@ -28,7 +22,6 @@ export const Team = () => {
         
     setAngle(angle => angle + 24);
     document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
-    console.log(angle);
     
   }
 
@@ -38,7 +31,7 @@ export const Team = () => {
 
         <div className = "carouselContainer">
 
-          <div className = "carousel" onLoad = {load}>
+          <div className = "carousel">
 
             <Card index = "a" name = "1"/>
             <Card index = "b" name = "2"/>
