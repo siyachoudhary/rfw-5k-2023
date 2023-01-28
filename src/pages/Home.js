@@ -13,12 +13,6 @@ export const Home = () => {
           RUN FOR WATER
 
         </header>
-
-        <header className = "Gradient App-header">
-
-          now its 700
-
-        </header>
         
     </div>
 
