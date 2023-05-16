@@ -39,5 +39,23 @@
 
 .next:hover, .prev:hover { transform: scale(1.2); }
 
-.next { right: 10vh; }
-.prev { left: 10vh; }
+.next { right: 37vw; }
+.prev { left: 37vw; }
+
+@media screen and (max-width: 990px) {
+
+    .next, .prev {
+
+        color: rgba(255, 255, 255, 0.65);
+        position: absolute;
+        cursor: pointer;
+        font-size: 6vh;
+        transition: all 0.3s;
+        top: 45vh;
+      
+    }
+
+    .next { right: 7vw; }
+    .prev { left: 7vw; }
+
+}
