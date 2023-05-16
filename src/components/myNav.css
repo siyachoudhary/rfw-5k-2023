@@ -32,7 +32,7 @@
   position: fixed;
   top: 3vh;
   left: 2.5vh;
-  width: calc(5vh + 1vw);
+  width: calc(5vh + 3vw);
   height: calc(5vh + 1vw);
   z-index: 6;
 
