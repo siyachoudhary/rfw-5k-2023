@@ -5,9 +5,9 @@
   --chunky: 'Lexend', sans-serif;
   --norm: 'Barlow Semi Condensed', sans-serif;
   --dark-grey: #0c0c0c;
-  --purple: #ff64ff;
-  --blue: #0dc7ff;
-  --gradient: linear-gradient(135deg, var(--purple), var(--blue));
+  --primary: #5DE6FF;
+  --secondary: #5ACAFF;
+  --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
 
   --z-spacing: 72vh;
 

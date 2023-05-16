@@ -8,19 +8,20 @@ import { useState } from "react";
 export const Team = () => {
 
   const [angle, setAngle] = useState(0);
+  const count = 15;
 
   useEffect(() => { document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)"; }, [angle]);
 
   const next = (e) => {
         
-    setAngle(angle => angle - 24);
+    setAngle(angle => angle - (360 / count));
     document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
 
   }
 
   const prev = (e) => {
         
-    setAngle(angle => angle + 24);
+    setAngle(angle => angle + (360 / count));
     document.querySelector(".carousel").style.transform = "rotateY(" + angle + "deg)";
     
   }
@@ -33,7 +34,7 @@ export const Team = () => {
 
           <div className = "carousel">
 
-            <Card index = "a" name = "1"/>
+            <Card index = "a" name = "gerard"/>
             <Card index = "b" name = "2"/>
             <Card index = "c" name = "3"/>
             <Card index = "d" name = "4"/>
