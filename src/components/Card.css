@@ -2,16 +2,11 @@
 
     position: absolute;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     width: 20vh;
     height: 30vh;
-    /* height: 20vh;
-    margin-top: 5vh;
-    font-size: 9vh; */
     text-align: center;
     color: #FFF;
-    /* border-radius: 100%; */
     border-radius: 10px;
     box-shadow: rgb(0, 0, 0) 0 0 15px;
     background: rgba(120, 120, 120, 0.5);
@@ -38,7 +33,7 @@
 
 .item .cardImage {
 
-    border-radius: 15%;
+    border-radius: 10px;
     width: 16vh;
     height: 16vh;
     margin: 2vh;
@@ -50,6 +45,9 @@
 .item:hover .cardImage {
 
     border-radius: 10px;
+    width: 16vh;
+    height: 16vh;
+    margin: 2vh;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0  20px 0;
 
 }
