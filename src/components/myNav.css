@@ -30,9 +30,10 @@
 .navbar-brand img {
 
   position: fixed;
-  top: 3vh;
+  top: 0vh;
   left: 2.5vh;
-  height: calc(5vh + 1vw);
+  width: calc(8vh + 1vw);
+  height: calc(8vh + 1vw);
   z-index: 6;
 
   -webkit-transition: all 0.2s ease-in-out;
