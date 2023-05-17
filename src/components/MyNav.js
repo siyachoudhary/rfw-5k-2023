@@ -107,7 +107,6 @@ export const MyNav = () => {
           <Container>
 
           <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW" className = "Shadowed Col" /> </Navbar.Brand>
-            <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/rfw_bw.png"} alt = "RFW" className = "Shadowed BW" /> </Navbar.Brand>
             
             <button className = "navbar-toggler second-button toggleBtn" type = "button" data-toggle = "collapse" data-target = "#responsive-navbar-nav"
               aria-controls = "responsive-navbar-nav" aria-expanded = "false" aria-label = "Toggle navigation" onClick = {toggleNav}>
