@@ -120,10 +120,14 @@ export const MyNav = () => {
 
               <Nav className = "links">
                 <CustomLink href = {"/rfw-5k-2023/"}>Home</CustomLink>
-                <CustomLink href = {"/rfw-5k-2023/about"}>About</CustomLink>
+                <CustomLink href = {"/about"}>About</CustomLink>
+                <CustomLink href = {"/impact"}>Impact</CustomLink>
+                <CustomLink href = {"/team"}>Team</CustomLink>
+                <CustomLink href = {"/contribute"}>Contribute</CustomLink>
+                {/* <CustomLink href = {"/rfw-5k-2023/about"}>About</CustomLink>
                 <CustomLink href = {"/rfw-5k-2023/impact"}>Impact</CustomLink>
                 <CustomLink href = {"/rfw-5k-2023/team"}>Team</CustomLink>
-                <CustomLink href = {"/rfw-5k-2023/contribute"}>Contribute</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/contribute"}>Contribute</CustomLink> */}
 
               </Nav>
 
