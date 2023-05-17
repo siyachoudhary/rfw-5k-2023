@@ -13,12 +13,10 @@ export const Impact = () => {
   const [runners, setRunners] = useState("")
   const [volunteers, setVolunteers] = useState("")
 
-  useEffect(() => {
-    fetchdata();
-  }, [])
+  useEffect(() => { fetchdata(); }, [])
 
-  const fetchdata=async()=>{
-    const response=db.collection("impact").doc("stats").get().then((snapshot) => {
+  const fetchdata = async () => {
+    const response = db.collection("impact").doc("stats").get().then((snapshot) => {
       setMoneyRaised(snapshot.data().money)
       setPeopleServed(snapshot.data().people_served)
       setRunners(snapshot.data().runners)
@@ -32,8 +30,7 @@ export const Impact = () => {
 
           <div className = "impactStats moneyRaised">
 
-            {/* <h1>${moneyRaised}</h1> */}
-            <h1>$<CountUp end={moneyRaised} duration={2}></CountUp></h1>
+            <h1>$<CountUp end = {moneyRaised} duration = {3}></CountUp></h1>
             <h3>RAISED</h3>
 
           </div>
@@ -42,24 +39,21 @@ export const Impact = () => {
 
             <div className = "impactStats">
 
-              {/* <h1>{runners}</h1> */}
-              <h1><CountUp end={runners} duration={2}></CountUp></h1>
-              <h3>RUNNERS</h3>
-
-            </div>
-
-            <div className = "impactStats">
-
-              {/* <h1>{volunteers}</h1> */}
-              <h1><CountUp end={volunteers} duration={2}></CountUp></h1>
+              <h1><CountUp end = {volunteers} duration = {2}></CountUp></h1>
               <h3>VOLUNTEERS</h3>
 
             </div>
 
             <div className = "impactStats">
 
-              {/* <h1>{peopleServed}+</h1> */}
-              <h1><CountUp end={peopleServed} duration={2}></CountUp>+</h1>
+              <h1><CountUp end = {runners} duration = {2}></CountUp></h1>
+              <h3>RUNNERS</h3>
+
+            </div>
+
+            <div className = "impactStats">
+
+              <h1><CountUp end = {peopleServed} duration = {2}></CountUp></h1>
               <h3>PEOPLE SERVED</h3>
 
             </div>
