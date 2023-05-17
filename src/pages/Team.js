@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import './Team.css'
 import { Card } from '../components/Card.js'
-import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
+import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md"
 
-import { useState } from "react";
+import { useState } from "react"
 
 export const Team = () => {
 

@@ -4,6 +4,7 @@
   "homepage": "https://aryan-cs.github.io/rfw-5k-2023",
   "private": true,
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,7 +16,7 @@
     "react-bootstrap": "^2.7.0",
     "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
+    "react-icons": "^4.8.0",
     "react-is-scrolling": "^1.0.1",
     "react-router-dom": "^6.6.2",
     "react-scripts": "^5.0.1",

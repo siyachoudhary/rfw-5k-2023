@@ -2,6 +2,7 @@ import React from 'react'
 import './Card.css'
 import '../pages/Team.css'
 import { useEffect } from 'react'
+import { Link } from '../components/Link.js'
 
 export const Card = (props) => {
 
@@ -31,13 +32,13 @@ export const Card = (props) => {
 
       <div className = "cardText">
 
-        <h3>{props.name}</h3>
+        <h3>{props.name.toUpperCase()}</h3>
 
       </div>
       
       <div className = "cardLinks">
 
-        
+        <Link name = {props.name} />
 
       </div>
         
