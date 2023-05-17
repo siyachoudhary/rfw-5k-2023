@@ -13,12 +13,20 @@
 
 }
 
+@keyframes slideInFromBottom {
+
+  0% { transform: translateY(200%); }
+
+  100% { transform: translateY(0); }
+
+}
 
 .App {
 
   text-align: center;
   font-family: var(--chunky);
   background-color: var(--dark-grey);
+  overflow-y: hidden;
   
 }
 

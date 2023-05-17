@@ -1,11 +1,13 @@
 .content {
 
+    /* margin-top: 200vh; */
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     overflow: hidden;
+    animation: slideInFromBottom 2s;
     
 }
 
@@ -34,7 +36,6 @@
   cursor: pointer;
   font-size: 6vh;
   transition: all 0.3s;
-  top: 45vh;
 
 }
 
