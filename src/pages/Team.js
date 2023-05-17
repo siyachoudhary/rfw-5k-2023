@@ -34,7 +34,7 @@ export const Team = () => {
 
           <div className = "carousel">
 
-            <Card index = "a" name = "gerard"/>
+            <Card index = "a" name = "Gerard Swami"/>
             <Card index = "b" name = "2"/>
             <Card index = "c" name = "3"/>
             <Card index = "d" name = "4"/>

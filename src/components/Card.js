@@ -15,7 +15,7 @@ export const Card = (props) => {
         src = {process.env.PUBLIC_URL + "/assets/people/"+ props.name + ".png"}
         alt = ""
         onError = {({ currentTarget }) => {
-          currentTarget.onerror = null; // prevents looping
+          currentTarget.onerror = null;
           currentTarget.src = process.env.PUBLIC_URL + "/assets/rfw_bg.png";
         }}
         className = "backgroundImage"/>
@@ -24,10 +24,22 @@ export const Card = (props) => {
         src = {process.env.PUBLIC_URL + "/assets/people/"+ props.name + ".png"}
         alt = ""
         onError = {({ currentTarget }) => {
-          currentTarget.onerror = null; // prevents looping
+          currentTarget.onerror = null;
           currentTarget.src = process.env.PUBLIC_URL + "/assets/rfw.png";
         }}
         className = "cardImage"/>
+
+      <div className = "cardText">
+
+        <h3>{props.name}</h3>
+
+      </div>
+      
+      <div className = "cardLinks">
+
+        
+
+      </div>
         
     </div>
 
