@@ -13,9 +13,9 @@ function App () {
 
       <MyNav />
 
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
 
-      <HashRouter>
+      {/* <HashRouter> */}
 
         <Routes>
 
@@ -25,9 +25,9 @@ function App () {
 
         </Routes>
 
-      </HashRouter>
+      {/* </HashRouter> */}
 
-      {/* </BrowserRouter> */}
+      </BrowserRouter>
 
     </div>
 
