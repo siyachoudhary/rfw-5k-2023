@@ -10,8 +10,6 @@ export const Card = (props) => {
 
     <div className = {"item " + props.index}>
 
-      {/* {props.name} */}
-
       <img
         src = {process.env.PUBLIC_URL + "/assets/people/"+ props.name + ".png"}
         alt = ""
@@ -38,7 +36,9 @@ export const Card = (props) => {
       
       <div className = "cardLinks">
 
-        <Link name = {props.name} />
+      <Link link = {"https://www.linkedin.com/in/aryan-g/"} />
+      <Link link = {"https://github.com/aryan-cs"} />
+      <Link link = {"https://mail.google.com/mail/u/0/?fs=1&to=aryan05g@gmail.com&tf=cm"} />
 
       </div>
         

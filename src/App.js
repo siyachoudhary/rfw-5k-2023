@@ -3,7 +3,7 @@ import { MyNav } from './components/MyNav';
 import { Home } from './pages/Home';
 import { Impact } from './pages/Impact';
 import { Team } from './pages/Team';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 
 function App () {
 
@@ -13,7 +13,7 @@ function App () {
 
       <MyNav />
 
-      <BrowserRouter>
+      <HashRouter>
 
         <Routes>
 
@@ -23,8 +23,7 @@ function App () {
 
         </Routes>
 
-      </BrowserRouter>
-      
+      </HashRouter>
 
     </div>
 
