@@ -3,7 +3,7 @@ import { MyNav } from './components/MyNav';
 import { Home } from './pages/Home';
 import { Impact } from './pages/Impact';
 import { Team } from './pages/Team';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App () {
 
@@ -13,21 +13,13 @@ function App () {
 
       <MyNav />
 
-      <BrowserRouter>
-
-      {/* <HashRouter> */}
-
         <Routes>
 
-          <Route path = "/rfw-5k-2023/" element = {<Home/>}></Route>
-          <Route path = "/rfw-5k-2023/impact" element = {<Impact/>}></Route>
-          <Route path = "/rfw-5k-2023/team" element = {<Team/>}></Route>
+          <Route path = "/home" element = {<Home/>}></Route>
+          <Route path = "/impact" element = {<Impact/>}></Route>
+          <Route path = "/team" element = {<Team/>}></Route>
 
         </Routes>
-
-      {/* </HashRouter> */}
-
-      </BrowserRouter>
 
     </div>
 

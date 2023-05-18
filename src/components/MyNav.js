@@ -106,7 +106,7 @@ export const MyNav = () => {
 
           <Container>
 
-          <Navbar.Brand href = "/rfw-5k-2023/"> <img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW" className = "Shadowed Col" /> </Navbar.Brand>
+          <Navbar.Brand href = "/home"> <img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW" className = "Shadowed Col" /> </Navbar.Brand>
             
             <button className = "navbar-toggler second-button toggleBtn" type = "button" data-toggle = "collapse" data-target = "#responsive-navbar-nav"
               aria-controls = "responsive-navbar-nav" aria-expanded = "false" aria-label = "Toggle navigation" onClick = {toggleNav}>
@@ -119,15 +119,12 @@ export const MyNav = () => {
               <Nav className = "me-auto" />
 
               <Nav className = "links">
-                <CustomLink href = {"/rfw-5k-2023/"}>Home</CustomLink>
+
+                <CustomLink href = {"/home"}>Home</CustomLink>
                 <CustomLink href = {"/about"}>About</CustomLink>
                 <CustomLink href = {"/impact"}>Impact</CustomLink>
                 <CustomLink href = {"/team"}>Team</CustomLink>
                 <CustomLink href = {"/contribute"}>Contribute</CustomLink>
-                {/* <CustomLink href = {"/rfw-5k-2023/about"}>About</CustomLink>
-                <CustomLink href = {"/rfw-5k-2023/impact"}>Impact</CustomLink>
-                <CustomLink href = {"/rfw-5k-2023/team"}>Team</CustomLink>
-                <CustomLink href = {"/rfw-5k-2023/contribute"}>Contribute</CustomLink> */}
 
               </Nav>
 
@@ -144,9 +141,10 @@ export const MyNav = () => {
   function CustomLink({href, children, ...props}){
     const path = window.location.pathname
     return (
-        path===href?
-        <Nav.Link href={href} {...props} className={"navItem active"}>{children}</Nav.Link>:
-            <Nav.Link href={href} {...props} className = "navItem">{children}</Nav.Link>
+        path === href ?
+        <Nav.Link href={href} {...props} className={"navItem active"}>{children}</Nav.Link>
+        :
+        <Nav.Link href={href} {...props} className = "navItem">{children}</Nav.Link>
     )
 
   }
