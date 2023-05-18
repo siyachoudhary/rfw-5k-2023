@@ -36,7 +36,7 @@ export const Team = () => {
 
             <Card index = "a"
                   name = "Gerard Swami"
-                  role = "Sacred Swami of the Heart"
+                  role = "Swami of the Sacred Heart"
                   linkedIn = "https://www.linkedin.com/in/gerard-swami/"
                   github = "https://github.com/swami-gerard"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=swami@gerard.com&tf=cm"
