@@ -1,11 +1,8 @@
 import React from 'react'
 import './Link.css'
-import {
-    FaLinkedinIn,
-    FaRegEnvelope,
-} from 'react-icons/fa'
-import { HiOutlineEnvelope } from 'react-icons/hi2'
+import { FaLinkedinIn, FaEnvelope } from 'react-icons/fa'
 import { ImGithub } from 'react-icons/im'
+import { RxExternalLink } from 'react-icons/rx'
 
 export const Link = (props) => {
 
@@ -15,11 +12,11 @@ export const Link = (props) => {
 
             <div className = {"button"}>
 
-                <div href = {props.link} target = "_blank" rel = "noreferrer">
+                <a href = {props.link} target = "_blank" rel = "noreferrer">
 
                     <FaLinkedinIn className = "icon"/>
 
-                </div>
+                </a>
 
             </div>
 
@@ -45,7 +42,7 @@ export const Link = (props) => {
 
     }
 
-    else if (props.link.includes("mailto")) {
+    else if (props.link.includes("mail")) {
 
         return (
 
@@ -53,7 +50,7 @@ export const Link = (props) => {
 
                 <a href = {props.link} target = "_blank" rel = "noreferrer">
 
-                    <HiOutlineEnvelope className = "icon"/>
+                    <FaEnvelope className = "icon"/>
 
                 </a>
 
@@ -71,7 +68,7 @@ export const Link = (props) => {
 
                 <a href = {props.link} target = "_blank" rel = "noreferrer">
 
-                    <FaRegEnvelope className = "icon"/>
+                    <RxExternalLink className = "icon"/>
 
                 </a>
 

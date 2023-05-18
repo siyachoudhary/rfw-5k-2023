@@ -34,13 +34,55 @@ export const Team = () => {
 
           <div className = "carousel">
 
-            <Card index = "a" name = "Gerard Swami"/>
-            <Card index = "b" name = "2"/>
-            <Card index = "c" name = "3"/>
-            <Card index = "d" name = "4"/>
-            <Card index = "e" name = "5"/>
-            <Card index = "f" name = "6"/>
-            <Card index = "g" name = "7"/>
+            <Card index = "a"
+                  name = "Gerard Swami"
+                  role = "Sacred Swami of the Heart"
+                  linkedIn = "https://www.linkedin.com/in/gerard-swami/"
+                  github = "https://github.com/swami-gerard"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=swami@gerard.com&tf=cm"
+                  link = "https://stackoverflow.com/#"/>
+
+            <Card index = "b"
+                  name = "Ankit Rath"
+                  role = "Marketing & Finance"
+                  linkedIn = "https://www.linkedin.com/in/ankit-rath-967163249/"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=rathankit27@gmail.com&tf=cm"/>
+
+            <Card index = "c"
+                  name = "Aryan Gupta"
+                  role = "Web Dev & Graphic Design"
+                  linkedIn = "https://www.linkedin.com/in/aryan-g/"
+                  github = "https://github.com/aryan-cs"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=aryan05g@gmail.com&tf=cm"/>
+
+            <Card index = "d"
+                  name = "Sid Dayaneni"
+                  role = "Web Dev"
+                  linkedIn = "https://www.linkedin.com/in/siddharth-dayaneni-025119262/"
+                  github = "https://github.com/SidD11111"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=siddharth.dayaneni@gmail.com&tf=cm"/>
+
+            <Card index = "e"
+                  name = "Siya Choudhary"
+                  role = "Web Dev"
+                  linkedIn = "https://www.linkedin.com/in/siya-choudhary-2b0b89229/"
+                  github = "https://github.com/siyachoudhary"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=siyacanvas@gmail.com&tf=cm"/>
+
+            <Card index = "f"
+                  name = "Shiven Patel"
+                  role = "Outreach"
+                  linkedIn = "https://www.linkedin.com/in/shiven-patel-467bb4233/"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=patelshiven1@gmail.com&tf=cm"/>
+
+            <Card index = "g"
+                  name = "NAME"
+                  role = "ROLE"
+                  linkedIn = ""
+                  github = ""
+                  email = ""
+                  link = ""/>
+
             <Card index = "h" name = "8"/>
             <Card index = "i" name = "9"/>
             <Card index = "j" name = "10"/>
