@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rfw-5k-2023/static/css/main.fa0a4840.css",
+    "main.js": "/rfw-5k-2023/static/js/main.84965e1a.js",
+    "index.html": "/rfw-5k-2023/index.html",
+    "main.fa0a4840.css.map": "/rfw-5k-2023/static/css/main.fa0a4840.css.map",
+    "main.84965e1a.js.map": "/rfw-5k-2023/static/js/main.84965e1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa0a4840.css",
+    "static/js/main.84965e1a.js"
+  ]
+}
