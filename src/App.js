@@ -1,6 +1,8 @@
 import './App.css';
 import { MyNav } from './components/MyNav';
+import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
+// import { About } from './pages/About';
 import { Impact } from './pages/Impact';
 import { Team } from './pages/Team';
 import { Route, Routes } from 'react-router-dom';
@@ -13,13 +15,18 @@ function App () {
 
       <MyNav />
 
-        <Routes>
+      {/* <Routes>
+        <Route path = "/rfw-5k-2023" element = {<Home/>}></Route>
+        <Route path = "/rfw-5k-2023/impact" element = {<Impact/>}></Route>
+        <Route path = "/rfw-5k-2023/team" element = {<Team/>}></Route>
+      </Routes> */}
 
-          <Route path = "/rfw-5k-2023" element = {<Home/>}></Route>
-          <Route path = "/rfw-5k-2023/impact" element = {<Impact/>}></Route>
-          <Route path = "/rfw-5k-2023/team" element = {<Team/>}></Route>
+      <Home />
+      {/* <About /> */}
+      <Impact />
+      <Team />
 
-        </Routes>
+      <Footer />
 
     </div>
 

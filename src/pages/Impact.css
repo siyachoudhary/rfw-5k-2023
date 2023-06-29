@@ -1,3 +1,9 @@
+.Impact {
+
+    /* min-height: 80vh; */
+
+}
+
 .impactStats {
 
     margin: 2vw;
@@ -8,7 +14,7 @@
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent; 
-    animation: slideInFromBottom 1s;
+    /* animation: slideInFromBottom 1s; */
 
 }
 
