@@ -6,6 +6,7 @@ import { Home } from './pages/Home';
 import { Impact } from './pages/Impact';
 import { Team } from './pages/Team';
 import { Route, Routes } from 'react-router-dom';
+import {Registration} from './pages/Registration'
 
 function App () {
 
@@ -25,6 +26,7 @@ function App () {
       {/* <About /> */}
       <Impact />
       <Team />
+      <Registration/>
 
       <Footer />
 
