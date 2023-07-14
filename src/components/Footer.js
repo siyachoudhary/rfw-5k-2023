@@ -7,25 +7,25 @@ import { Link } from '../components/Link.js'
 // this was made by ai. this shit dont work gang.
 // supposed to look like this: https://codepen.io/z-/pen/zYxdRQy
 export const Footer = () => {
-    const [bubbles, setBubbles] = useState([]);
+  //   const [bubbles, setBubbles] = useState([]);
 
-  useEffect(() => {
-    const generateBubbles = () => {
-      const newBubbles = [];
-      for (let i = 0; i < 10; i++) {
-        const bubble = {
-          x: Math.random() * window.innerWidth,
-          y: window.innerHeight + 100,
-          size: Math.random() * 100,
-          opacity: Math.random() * 0.5,
-        };
-        newBubbles.push(bubble);
-      }
-      setBubbles(newBubbles);
-    };
-    generateBubbles();
-    setInterval(generateBubbles, 1000);
-  }, []);
+  // useEffect(() => {
+  //   const generateBubbles = () => {
+  //     const newBubbles = [];
+  //     for (let i = 0; i < 10; i++) {
+  //       const bubble = {
+  //         x: Math.random() * window.innerWidth,
+  //         y: window.innerHeight + 100,
+  //         size: Math.random() * 100,
+  //         opacity: Math.random() * 0.5,
+  //       };
+  //       newBubbles.push(bubble);
+  //     }
+  //     setBubbles(newBubbles);
+  //   };
+  //   generateBubbles();
+  //   setInterval(generateBubbles, 1000);
+  // }, []);
 
   return (
     <footer>
@@ -43,7 +43,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="gooey-bubbles">
+        {/* <div className="gooey-bubbles">
           {bubbles.map((bubble) => (
             <div
               key={bubble.id}
@@ -57,7 +57,7 @@ export const Footer = () => {
               }}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </footer>
   );
