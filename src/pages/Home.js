@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import './Home.css'
 import "./AllPages.css"
 
 export const Home = () => {

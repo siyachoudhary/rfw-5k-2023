@@ -4,6 +4,7 @@
   "homepage": "https://aryan-cs.github.io/rfw-5k-2023",
   "private": true,
   "dependencies": {
+    "@paypal/react-paypal-js": "^8.1.0",
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

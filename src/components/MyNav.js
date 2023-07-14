@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./myNav.css"
+import "./MyNav.css"
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
