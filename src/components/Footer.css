@@ -15,6 +15,8 @@ footer {
   .footerTitle{
     color: #5ACAFF;
     font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .col-md-6 {
@@ -74,14 +76,86 @@ footer {
     transform: translateY(0px);
   }
 
+  .footerHeader{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerImg{
+    width: 15vh;
+    margin-right: 1vh;
+  }
+
+  .sponsor{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+    opacity: .6;
+  }
+
+  .sponsor:hover{
+    transition: all 0.25s ease-in-out;
+    opacity: 1;
+  }
+
+  .sponsorsRow{
+    margin-left: 15vh;
+    margin-right: 15vh;
+  }
+
+  .missionSection{
+    margin-left: 10vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+  }
+
+  .missionTitle{
+    font-size: 2vh;
+    color: #5ACAFF;
+  }
+
+  .mission{
+    font-size: 1.75vh;
+    font-family: var(--norm);
+  }
+
   @media screen and (max-width: 991px){
   footer .navItem {
       font-size: 1.9vh;
       margin: 0;
   }
 
+
+  .missionSection{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .footerHeader{
+    display: inline;
+  }
+
+  .footerImg{
+    width: 25vh;
+    margin-right: 1vh;
+    margin-top: -5vh;
+    margin-bottom: -5vh;
+  }
+
   footer ul li {
     margin-right: 10px;
     margin-left: 10px;
+  }
+
+  .sponsorsRow{
+    margin-left: 0vh;
+    margin-right: 0vh;
   }
 }
