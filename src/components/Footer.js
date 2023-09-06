@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import '../pages/Team.css'
 import { useEffect, useState } from 'react'
+import { Nav } from 'react-bootstrap'
 import { Link } from '../components/Link.js'
 
 // this was made by ai. this shit dont work gang.
@@ -32,17 +33,22 @@ export const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <p>Copyright © 2023 Zed Dash</p>
+            <p className='footerTitle'>RUN FOR WATER 5K</p>
           </div>
           <div className="col-md-6">
             <ul className="list-inline">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+                <li><CustomLink href = {"#"}>Home</CustomLink></li>
+                <li><CustomLink href = {"#about"}>About</CustomLink></li>
+                <li><CustomLink href = {"#impact"}>Impact</CustomLink></li>
+                <li><CustomLink href = {"#team"}>Team</CustomLink></li>
+                <li><CustomLink href = {"#register"}>Register</CustomLink></li>
+                {/* <li><Link link = "https://www.instagram.com/runforwater2023/" /></li> */}
             </ul>
           </div>
         </div>
+        <div className='rowBottom'>
+            <p>Copyright © 2023 Run For Water</p>
+          </div>
         {/* <div className="gooey-bubbles">
           {bubbles.map((bubble) => (
             <div
@@ -61,6 +67,17 @@ export const Footer = () => {
       </div>
     </footer>
   );
+
+  function CustomLink({href, children, ...props}){
+    const path = window.location.pathname
+    return (
+        path === href ?
+        <Nav.Link href={href} {...props} className={"navItem active"}>{children}</Nav.Link>
+        :
+        <Nav.Link href={href} {...props} className = "navItem">{children}</Nav.Link>
+    )
+
+  }
 };
 
 export default Footer;
