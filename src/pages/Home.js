@@ -6,7 +6,7 @@ export const Home = () => {
 
   return (
 
-    <div>
+    <div id='home'>
 
         <header className = "Shadowed Gradient App-header">
 

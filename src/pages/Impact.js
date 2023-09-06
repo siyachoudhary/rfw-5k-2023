@@ -26,7 +26,7 @@ export const Impact = () => {
   
   return (
 
-      <div className = "Impact">
+      <div className = "Impact" id="impact">
 
           <div className = "impactStats moneyRaised">
 

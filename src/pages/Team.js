@@ -28,7 +28,7 @@ export const Team = () => {
 
   return (
 
-    <div className = "content">
+    <div className = "content" id="team">
 
         <div className = "carouselContainer">
 
