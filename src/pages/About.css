@@ -37,7 +37,7 @@
 
 .About-text {
 
-  font-size: calc(1vh + 1vw);
+  font-size: calc(2vh + 0.25vw);
   font-family: var(--norm);
   margin-right: 3vh;
   margin-left: 3vh;
