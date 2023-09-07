@@ -112,18 +112,18 @@
 .a { transform: rotateY(0deg) translateZ(var(--z-spacing)); }
 .a:hover { transform: rotateY(0deg) translateZ(var(--z-spacing)) scale(1.05); }
 
-.b { transform: rotateY(72deg) translateZ(var(--z-spacing)); }
-.b:hover { transform: rotateY(72deg) translateZ(var(--z-spacing)) scale(1.05); }
+.b { transform: rotateY(24deg) translateZ(var(--z-spacing)); }
+.b:hover { transform: rotateY(24deg) translateZ(var(--z-spacing)) scale(1.05); }
 
-.c { transform: rotateY(144deg) translateZ(var(--z-spacing)); }
-.c:hover { transform: rotateY(144deg) translateZ(var(--z-spacing)) scale(1.05);  }
+.c { transform: rotateY(48deg) translateZ(var(--z-spacing)); }
+.c:hover { transform: rotateY(48deg) translateZ(var(--z-spacing)) scale(1.05);  }
 
-.d { transform: rotateY(216deg) translateZ(var(--z-spacing)); }
-.d:hover { transform: rotateY(216deg) translateZ(var(--z-spacing)) scale(1.05); }
+.d { transform: rotateY(72deg) translateZ(var(--z-spacing)); }
+.d:hover { transform: rotateY(72deg) translateZ(var(--z-spacing)) scale(1.05); }
 
-.e { transform: rotateY(288deg) translateZ(var(--z-spacing)); }
-.e:hover { transform: rotateY(288deg) translateZ(var(--z-spacing)) scale(1.05); }
-/* 
+.e { transform: rotateY(96deg) translateZ(var(--z-spacing)); }
+.e:hover { transform: rotateY(96deg) translateZ(var(--z-spacing)) scale(1.05); }
+
 .f { transform: rotateY(120deg) translateZ(var(--z-spacing)); }
 .f:hover { transform: rotateY(120deg) translateZ(var(--z-spacing)) scale(1.05); }
 
@@ -152,4 +152,4 @@
 .n:hover { transform: rotateY(312deg) translateZ(var(--z-spacing)) scale(1.05); }
 
 .o { transform: rotateY(336deg) translateZ(var(--z-spacing)); }
-.o:hover { transform: rotateY(336deg) translateZ(var(--z-spacing)) scale(1.05); } */
+.o:hover { transform: rotateY(336deg) translateZ(var(--z-spacing)) scale(1.05); }

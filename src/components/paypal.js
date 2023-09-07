@@ -1,22 +1,62 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import './paypal.css'
 
+const style = {"layout":"vertical"};
+
 export default function Paypal() {
+    const [divStyles, setDivStyles] = useState({});
+
+    // const createOrder = (data, actions) => {
+    //     return actions.order
+    //         .create({
+    //             purchase_units: [
+    //                 {
+    //                     amount: {
+    //                         value: donationAmount,
+    //                     },
+    //                 },
+    //             ],
+    //             application_context: {
+    //                 shipping_preference: "NO_SHIPPING"
+    //             }
+    //         })
+    //         .then((orderID) => {
+    //             setOrderID(orderID);
+    //             return orderID;
+    //         });
+    // }
+
+    const buttonPressed = e => {
+        console.log(e.target.id);  // Get ID of Clicked Element
+      }
 
   return (
-        <div>
+        <div className = "paymentDiv" style={divStyles}>
             <PayPalScriptProvider 
                 options = {{
                     "client-id":
-                        "AeMgT3IRONXWLBcyjtj9CEUVOR8DRYMojSWUJje5KxkUAv9qhTBvaLWHTQNJZlpOb6L7n5fUuPVJA_KQ",
+                        "AZk95fQY7R-EY_ChjxGXbTffjH4ghaHUZobtQ9ubvnMAZpj3bWezxC7iXIk5YiB27r6Dp6ms4BGlUZXv",
                     "disable-funding":
                         "paylater",
                     "enable-funding":
-                        "venmo"
+                        "venmo",
                 }}
             >
                 <PayPalButtons
+                style={style}
+                onClick={() => {
+                    setTimeout(function () {
+                        var divElement = document.querySelector(".paymentSection");
+                        var elemHeight = divElement.offsetHeight;
+                        
+                        if(elemHeight > 400 && window.screen.width >= 990) {
+                            setDivStyles({marginTop : "-200px"});
+                        }
+                        // console.log(document.getElementsByClassName('paymentSection')[0])
+                    }, 2000);
+                  }}
+
                 createOrder={(data, actions) => {
                     return actions.order.create({
                     purchase_units: [
@@ -26,6 +66,9 @@ export default function Paypal() {
                         },
                         },
                     ],
+                    application_context: {
+                        shipping_preference: "NO_SHIPPING"
+                    }
                     });
                 }}
                 onApprove={async (data, actions) => {
@@ -35,6 +78,7 @@ export default function Paypal() {
                 }}
                 />
             </PayPalScriptProvider>
-        </div>
+
+         </div>
   );
 }

@@ -8,7 +8,7 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-right: -5px;
     margin-left: -5px;
 }
@@ -82,7 +82,7 @@ label {
     margin-right: -5px;
     margin-left: -5px;
     text-align: left;
-    margin-bottom: 5vh;
+    margin-bottom: 20vh;
 }
 
 .formSection {
@@ -93,8 +93,9 @@ label {
 
 .paymentSection{
     width: 50%;
-    margin-left: 7.5vw;;
+    margin-left: 9vw;;
     margin-top: 12vh;
+    margin-right: 3vw;
 }
 
 button {
@@ -130,14 +131,41 @@ button {
     text-align: center;
 }
 
+@media screen and (max-width: 990px) {
+
+    .formSection {
+        width: 100%;
+        /* margin-left: 2vw; */
+    
+    }
+    
+    .paymentSection{
+        width: 100%;
+        margin-left: 10%;;
+        margin-top: 5vh;
+        margin-right: 0vw;
+    }
+
+    .registrationSection{
+        display: block;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .form-control{
+        width: 95%
+    }
+
+}
+
 .fn{
     /* margin-left: 2vw; */
-    width: 90%
+    width: 86%
 }
 
 .ln {
     /* margin-left: 2vw; */
-    width: 90% 
+    width: 86% 
 }
 
 .email{
@@ -160,4 +188,54 @@ button {
 
 .sizesection{
     width: 33.7%
+}
+
+@media screen and (max-width: 924px) {
+    
+    .paymentSection{
+        width: 100%;
+        margin-left: 8%;;
+        margin-top: 5vh;
+        margin-right: 0vw;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    
+    .paymentSection{
+        width: 100%;
+        margin-left: 6%;;
+        margin-top: 5vh;
+        margin-right: 0vw;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    
+    .paymentSection{
+        width: 100%;
+        margin-left: 4%;;
+        margin-top: 5vh;
+        margin-right: 0vw;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    
+    .paymentSection{
+        width: 100%;
+        margin-left: 2%;;
+        margin-top: 5vh;
+        margin-right: 0vw;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    
+    .paymentSection{
+        width: 100%;
+        margin-left: 0%;;
+        margin-top: 5vh;
+        margin-right: 0vw;
+    }
 }
