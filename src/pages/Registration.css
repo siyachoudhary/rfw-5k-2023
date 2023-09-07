@@ -50,6 +50,7 @@ label {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
+    width: 100%;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -83,7 +84,6 @@ label {
     margin-left: -5px;
     text-align: left;
     margin-bottom: 20vh;
-    
 }
 
 .formSection {
