@@ -2,7 +2,7 @@ import './App.css';
 import { MyNav } from './components/MyNav';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
-// import { About } from './pages/About';
+import { About } from './pages/About';
 import { Impact } from './pages/Impact';
 import { Team } from './pages/Team';
 import { Route, Routes } from 'react-router-dom';
@@ -23,7 +23,7 @@ function App () {
       </Routes> */}
 
       <Home />
-      {/* <About /> */}
+      <About />
       <Impact />
       <Team />
       <Registration/>

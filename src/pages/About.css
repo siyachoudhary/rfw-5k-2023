@@ -1,0 +1,72 @@
+.Gradient {
+    
+  background-image: var(--gradient);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  
+}
+
+.About-header {
+
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(4vh + 2.5vw);
+  /* animation: slideInFromBottom 3s; */
+
+}
+
+.About-body {
+
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 18vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.About-text {
+
+  font-size: calc(1vh + 1vw);
+  font-family: var(--norm);
+  margin-right: 3vh;
+  margin-left: 3vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 40vw;
+  color: rgba(255, 255, 255, 0.85);
+
+}
+
+.About-collage {
+
+  width: 35vw;
+  border-radius: 2vh;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+
+}
+
+@media screen and (max-width: 990px) {
+
+  .About-body { flex-direction: column; }
+
+  .About-text { width: 80vw; }
+  
+  .About-collage { width: 80vw; }
+
+}
