@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import '../pages/Team.css'
 import { useEffect, useState } from 'react'
+import { Nav } from 'react-bootstrap'
 import { Link } from '../components/Link.js'
 
 // this was made by ai. this shit dont work gang.
@@ -30,17 +31,33 @@ export const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <p>Copyright © 2023 Zed Dash</p>
+          <div className="row">
+              <p className='footerTitle'>THANK YOU TO OUR SPONSORS!</p>
           </div>
-          <div className="col-md-6">
-            <ul className="list-inline">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
+          <div className='row sponsorsRow sponsors'>
+            <div className='col'>
+              <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProj.png"} alt = "RFW" className = "sponsor" /></a>
+            </div>
+            <div className='col'>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProject.png"} alt = "RFW" className = "sponsor" /></a>
+            </div>
+            <div className='col'>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProject.png"} alt = "RFW" className = "sponsor" /></a>
+            </div>
+            <div className='col'>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProj.png"} alt = "RFW" className = "sponsor" /></a>
+            </div>
+            <div className='col'>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProject.png"} alt = "RFW" className = "sponsor" /></a>
+            </div>
+            <div className='col'>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProj.png"} alt = "RFW" className = "sponsor" /></a>
+            </div>
+          </div>
+        <div className='rowBottom'>
+          <div className='mainFooter'>
+            <p>CLEAN WATER, ONE STRIDE AT A TIME.</p>
+            <img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW" className = "" />
           </div>
         </div>
         {/* <div className="gooey-bubbles">
@@ -61,6 +78,17 @@ export const Footer = () => {
       </div>
     </footer>
   );
+
+  function CustomLink({href, children, ...props}){
+    const path = window.location.pathname
+    return (
+        path === href ?
+        <Nav.Link href={href} {...props} className={"navItem active"}>{children}</Nav.Link>
+        :
+        <Nav.Link href={href} {...props} className = "navItem">{children}</Nav.Link>
+    )
+
+  }
 };
 
 export default Footer;
