@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./MyNav.css"
+import "./myNav.css"
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -106,7 +106,7 @@ export const MyNav = () => {
 
           <Container>
 
-          <Navbar.Brand href = "#home"> <img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW" className = " " /> </Navbar.Brand>
+          <Navbar.Brand href = "/rfw-5k-2023"> <img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW" className = "Shadowed Col" /> </Navbar.Brand>
             
             <button className = "navbar-toggler second-button toggleBtn" type = "button" data-toggle = "collapse" data-target = "#responsive-navbar-nav"
               aria-controls = "responsive-navbar-nav" aria-expanded = "false" aria-label = "Toggle navigation" onClick = {toggleNav}>
@@ -120,11 +120,11 @@ export const MyNav = () => {
 
               <Nav className = "links">
 
-                <CustomLink href = {"#home"}>Home</CustomLink>
-                <CustomLink href = {"#about"}>About</CustomLink>
-                <CustomLink href = {"#impact"}>Impact</CustomLink>
-                <CustomLink href = {"#team"}>Team</CustomLink>
-                <CustomLink href = {"#registration"}>Register</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023"}>Home</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/about"}>About</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/impact"}>Impact</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/team"}>Team</CustomLink>
+                <CustomLink href = {"/rfw-5k-2023/contribute"}>Contribute</CustomLink>
 
               </Nav>
 

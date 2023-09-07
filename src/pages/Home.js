@@ -1,12 +1,12 @@
 import React from 'react'
-import './Home.css'
+import './home.css'
 import "./AllPages.css"
 
 export const Home = () => {
 
   return (
 
-    <div id='home'>
+    <div>
 
         <header className = "Shadowed Gradient App-header">
 

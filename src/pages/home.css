@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(8vh + 5vw);
+  font-size: 10vw;
   /* animation: slideInFromBottom 3s; */
 
 }
