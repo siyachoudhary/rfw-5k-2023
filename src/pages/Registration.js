@@ -6,7 +6,7 @@ import "./AllPages.css"
 
 export const Registration = () => {
     return(
-        <div className = 'registrationSection'>
+        <div className = 'registrationSection' id="registration">
             <div className = 'formSection'>
                 <h1 className = 'labels registrationSectionHeader'>Registration</h1>
                 <form>
