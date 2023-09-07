@@ -43,10 +43,11 @@ export const Team = () => {
                   link = "https://stackoverflow.com/#"/> */}
 
             <Card index = "a"
-                  name = "Ankit Rath"
-                  role = "Child Predator"
-                  linkedIn = "https://www.linkedin.com/in/ankit-rath-967163249/"
-                  email = "https://mail.google.com/mail/u/0/?fs=1&to=rathankit27@gmail.com&tf=cm"/>
+                  name = "Sid Dayaneni"
+                  role = "Slave"
+                  linkedIn = "https://www.linkedin.com/in/siddharth-dayaneni-025119262/"
+                  github = "https://github.com/SidD11111"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=siddharth.dayaneni@gmail.com&tf=cm"/>
 
             <Card index = "b"
                   name = "Aryan Gupta"
@@ -55,23 +56,34 @@ export const Team = () => {
                   github = "https://github.com/aryan-cs"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=aryan05g@gmail.com&tf=cm"/>
 
-            <Card index = "c"
-                  name = "Sid Dayaneni"
-                  role = "Slave"
-                  linkedIn = "https://www.linkedin.com/in/siddharth-dayaneni-025119262/"
-                  github = "https://github.com/SidD11111"
-                  email = "https://mail.google.com/mail/u/0/?fs=1&to=siddharth.dayaneni@gmail.com&tf=cm"/>
+            {/* <Card index = "c" 
+                  name = "Ankit Rath"
+                  role = "Child Predator"
+                  linkedIn = "https://www.linkedin.com/in/ankit-rath-967163249/"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=rathankit27@gmail.com&tf=cm"/> */}
+
+            <Card index = "c" 
+                  name = "DDGG"
+                  role = "Playboy DD"
+                  linkedIn = "https://www.linkedin.com/in/ankit-rath-967163249/"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=rathankit27@gmail.com&tf=cm"/>
 
             <Card index = "d"
                   name = "Siya Choudhary"
-                  role = "Fat Kid Kicker"
+                  role = "insiyawetrus"
                   linkedIn = "https://www.linkedin.com/in/siya-choudhary-2b0b89229/"
                   github = "https://github.com/siyachoudhary"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=siyacanvas@gmail.com&tf=cm"/>
 
-            <Card index = "e"
+            {/* <Card index = "e"
                   name = "Shiven Patel"
                   role = "Rahul's Trans Daughter"
+                  linkedIn = "https://www.linkedin.com/in/shiven-patel-467bb4233/"
+                  email = "https://mail.google.com/mail/u/0/?fs=1&to=patelshiven1@gmail.com&tf=cm"/> */}
+
+            <Card index = "e"
+                  name = "King Sharby"
+                  role = "hey guys"
                   linkedIn = "https://www.linkedin.com/in/shiven-patel-467bb4233/"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=patelshiven1@gmail.com&tf=cm"/>
 {/* 

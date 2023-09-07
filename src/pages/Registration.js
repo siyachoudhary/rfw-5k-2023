@@ -6,7 +6,7 @@ import "./AllPages.css"
 
 export const Registration = () => {
     return(
-        <div className = 'registrationSection' id='registration'>
+        <div className = 'registrationSection'>
             <div className = 'formSection'>
                 <h1 className = 'labels registrationSectionHeader'>Registration</h1>
                 <form>
@@ -64,7 +64,7 @@ export const Registration = () => {
 
 
                         <div className="form-group col-md-4 sizesection">
-                            <label className = 'labels'>Shirt Size (Adult Sizes)</label>
+                            <label className = 'labels'>Shirt Size</label>
                             <select id="inputState" className="form-control size">
                                 <option selected>Choose...</option>
                                 <option>XS</option>
@@ -81,7 +81,7 @@ export const Registration = () => {
                     
                 </form>
 
-                <button type="submit" onClick = {addRunner} className="btn btn-primary">Submit</button>
+                {/* <button type="submit" onClick = {addRunner} className="btn btn-primary">Submit</button> */}
 
             </div>
 

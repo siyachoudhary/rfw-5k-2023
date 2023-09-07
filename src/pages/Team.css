@@ -35,7 +35,7 @@
   position: absolute;
   cursor: pointer;
   font-size: 6vh;
-  transition: all 0.3s;
+  transition: all 0.3s; 
 
 }
 
@@ -49,11 +49,11 @@
     .next, .prev {
 
         color: rgba(255, 255, 255, 0.65);
-        position: absolute;
+        /* position: absolute; */
         cursor: pointer;
         font-size: 6vh;
         transition: all 0.3s;
-        top: 45vh;
+        /* top: 45vh; */
       
     }
 
