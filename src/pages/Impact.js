@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import db from './firebase.config';
 import {useState,useEffect, useRef} from 'react';
 import CountUp from "react-countup";
-import ReactCounUp, { CountUpProps } from "react-countup";
-import { useInView } from "react-intersection-observer";
 
 export const Impact = () => {
 
@@ -31,9 +29,8 @@ export const Impact = () => {
       <div className = "Impact" id="impact">
 
           <div className = "impactStats moneyRaised">
-            <h1>
-              <CountUp delay={2} end={moneyRaised} ></CountUp>
-            </h1>
+
+            <h1>$<CountUp end = {moneyRaised} duration = {3}></CountUp></h1>
             <h3>RAISED</h3>
 
           </div>
@@ -42,21 +39,21 @@ export const Impact = () => {
 
             <div className = "impactStats">
 
-              <h1><CountUp delay={2} end={volunteers} /></h1>
+              <h1><CountUp end = {volunteers} duration = {2}></CountUp></h1>
               <h3>VOLUNTEERS</h3>
 
             </div>
 
             <div className = "impactStats">
 
-              <h1><CountUp delay={2} end={runners} /></h1>
+              <h1><CountUp end = {runners} duration = {2}></CountUp></h1>
               <h3>RUNNERS</h3>
 
             </div>
 
             <div className = "impactStats">
 
-              <h1><CountUp delay={2} end={peopleServed} /></h1>
+              <h1><CountUp end = {peopleServed} duration = {2}></CountUp></h1>
               <h3>PEOPLE SERVED</h3>
 
             </div>

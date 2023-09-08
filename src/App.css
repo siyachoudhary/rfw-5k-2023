@@ -26,7 +26,7 @@
   text-align: center;
   font-family: var(--chunky);
   background-color: var(--dark-grey);
-  overflow-y: hidden;
+  overflow: hidden;
   
 }
 

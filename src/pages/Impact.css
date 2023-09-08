@@ -22,6 +22,8 @@
     
     margin: 4vh;
     color: rgb(90, 90, 90);
+    font-family: var(--norm);
+    font-size: 2vh;
 
 }
 
@@ -31,7 +33,6 @@
 
         display: flex;
         justify-content: center;
-        cursor: pointer;
 
     }
 
@@ -57,7 +58,7 @@
 
     .bottomStats h3 { font-size: 1.5vw; }
 
-    .moneyRaised h1 { font-size: 20vw; cursor: pointer; }
+    .moneyRaised h1 { font-size: 20vw;}
     
     .moneyRaised h3 { font-size: 3.5vw; }
 
@@ -73,7 +74,7 @@
 
     .bottomStats h3 { font-size: 4vw; }
     
-    .moneyRaised h1 { font-size: 20vw; cursor: pointer; }
+    .moneyRaised h1 { font-size: 20vw; }
     
     .moneyRaised h3 { font-size: 10vw; }
 

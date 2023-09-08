@@ -8,9 +8,6 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    /* flex-wrap: wrap; */
-    margin-right: -5px;
-    margin-left: -5px;
 }
 
 label {
@@ -27,22 +24,25 @@ label {
 }
 
 .form-control {
+
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
-    font-size: 3vh;
+    font-size: 2vh;
     line-height: 1.5;
-    color: hsla(0,0%,100%,.55);
-    background-color: var(--dark-grey);
+    color: rgb(232, 232, 232);
+    background-color: #2d2d2d34;
+    box-shadow: 0 0 4px 2px #00000034;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: none;
     border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    /* height: 8vh; */
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: text;
+
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5vh;
 }
 
 
@@ -50,6 +50,8 @@ label {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
+    width: 100%;
+    margin-top: 2.5vh;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -57,6 +59,7 @@ label {
 }
 
 .btn {
+
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -73,25 +76,23 @@ label {
     border-radius: 0.25rem;
 
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
 }
 
 .registrationSection {
     display: flex;
-    /* -ms-flex-wrap: wrap; */
-    /* flex-wrap: wrap; */
-    margin-right: -5px;
-    margin-left: -5px;
     text-align: left;
-    margin-bottom: 20vh;
+    align-self: center;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .formSection {
     width: 50%;
     margin-left: 2vw;
-
 }
 
-.paymentSection{
+.paymentSection {
     width: 50%;
     margin-left: 9vw;;
     margin-top: 12vh;
@@ -129,7 +130,18 @@ button {
     color: var(--gradient);
     font-family: var(--barlow);
     text-align: center;
+    font-size: calc(3vh + 1.75vw);
+    margin-bottom: 1vh;
 }
+
+.requirements {
+    color: #acacac;
+    font-size: calc(1.25vh + 0.5vw);
+    font-family: var(--norm);
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 4vh;
+  }
 
 @media screen and (max-width: 990px) {
 
@@ -158,17 +170,17 @@ button {
 
 }
 
-.fn{
-    /* margin-left: 2vw; */
-    width: 86%
+.fn {
+    width: 85%;
+    margin-bottom: 1.5vh;
 }
 
 .ln {
-    /* margin-left: 2vw; */
-    width: 86% 
+    width: 85%;
+    margin-bottom: 1.5vh;
 }
 
-.email{
+.email {
     width: 100%;
 }
 
@@ -176,18 +188,30 @@ button {
     margin-right: -2.7vw;
 }
 
-.gendersection{
-    width: 35%;
+.gendersection {
+    width: 30.5%;
     margin-right: 1.35vw;
 }
 
-.agesection{
-    width: 25%;
+.gendersection select {
+    cursor: pointer;
+}
+
+.agesection {
+    width: 30.5%;
     margin-right: 1.35vw;
 }
 
-.sizesection{
-    width: 33.7%
+.agesection select {
+    cursor: pointer;
+}
+
+.sizesection {
+    width: 30.5%;
+}
+
+.sizesection select {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 924px) {

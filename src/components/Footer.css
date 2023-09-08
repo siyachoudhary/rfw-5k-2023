@@ -1,12 +1,15 @@
-.container{
+.container {
+  
   padding: 0;
+  overflow: hidden;
+
 }
 
 footer {
-    /* background-color: #f5f5f5; */
-    text-align: center;
-    background-color: #181818;
-  }
+  
+  text-align: center;
+
+}
   
   footer p {
     margin-bottom: 0;
@@ -36,23 +39,27 @@ footer {
     margin-left: 5px;
   }
 
-  .row{
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .row {
+    
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
   }
 
-  .rowBottom{
+  .rowBottom {
     background-color: #000000;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    box-shadow: 0px 0px 30px 30px #000000;
     text-align: center;
+    margin-top: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
 
   .sponsor{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 50%;
     width: 90%;
     opacity: .7;
   }
@@ -87,8 +94,8 @@ footer {
   }
 
   .mainFooter img{
-    width: 15vh;
-    margin-left: 1vh;
+    width: 10vh;
+    margin-left: 3vh;
     margin-top: -3vh;
     margin-bottom: -3vh;
   }
