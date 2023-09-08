@@ -53,7 +53,16 @@ export const Footer = () => {
             <div className='col'>
             <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW" className = "sponsor" /></a>
             </div>
+
+            <p className='sponsorMessage'>
+              We are currently looking for more sponsors.
+              Please reach out to &nbsp;
+              <a href = "https://mail.google.com/mail/u/0/?fs=1&to=runforwater5kteam@gmail.com&tf=cm"
+                 target = "_blank"
+                 rel = "noreferrer">runforwater5kteam@gmail.com</a>
+               &nbsp;if interested!</p>
           </div>
+
         <div className='rowBottom'>
           <div className='mainFooter'>
             <p>CLEAN WATER, ONE STRIDE AT A TIME.</p>

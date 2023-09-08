@@ -10,6 +10,18 @@ footer {
   text-align: center;
 
 }
+
+.sponsorMessage {
+
+  margin-top: -8vh;
+  color: rgba(152, 152, 152, 0.7);
+
+}
+
+.sponsorMessage a {
+  color: var(--secondary);
+  text-decoration: none;
+}
   
   footer p {
     margin-bottom: 0;
@@ -104,6 +116,13 @@ footer {
   footer .navItem {
       font-size: 1.9vh;
       margin: 0;
+  }
+
+  .sponsorMessage {
+
+    margin-top: 2vh;
+    font-size: 3.5vw;
+  
   }
 
   .missionSection{
