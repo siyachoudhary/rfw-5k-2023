@@ -33,6 +33,11 @@ export const Registration = () => {
         console.log(document.getElementsByClassName('form-control')[3].value);
     
         console.log('success!')
+        alert("Thank you for registering. Signup success!")
+        firstName = "";
+        lastName = "";
+        email = "";
+
         setSubmitDisabled(true);
     }
 
