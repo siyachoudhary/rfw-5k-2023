@@ -121,8 +121,8 @@ export const Registration = () => {
         <div className = 'registrationSection' id="registration">
             <div className = 'formSection'>
                 <h1 className = 'labels registrationSectionHeader'>REGISTRATION</h1>
-                <p className = "desc">Registration Cost is $32 per person</p>
-                <p className = "requirements">Payment and Information Required Before Submission</p>
+                <p className = "desc">Registration Cost is $32 per person and covers shirt, donation, and race day amenities.</p>
+                <p className = "requirements"><b>Payment and Information Required Before Submission</b></p>
                 <form>
                     <div className="form-row firstname">
                         <div className="form-group col-md-6">
