@@ -120,11 +120,11 @@ export const MyNav = () => {
 
               <Nav className = "links">
 
-                <CustomLink href = {"#home"} offset="-300" spy={true}>Home</CustomLink>
-                <CustomLink href = {"#about"} offset="-300" spy={true}>About</CustomLink>
-                <CustomLink href = {"#impact"}offset="300" spy={true}>Impact</CustomLink>
-                <CustomLink href = {"#team"} offset="300" spy={true}>Team</CustomLink>
-                <CustomLink href = {"#registration"} offset="300" spy={true}>Register</CustomLink>
+                <CustomLink href = {"#home"}>Home</CustomLink>
+                <CustomLink href = {"#about"}>About</CustomLink>
+                <CustomLink href = {"#impact"}>Impact</CustomLink>
+                <CustomLink href = {"#team"}>Team</CustomLink>
+                <CustomLink href = {"#registration"}>Register</CustomLink>
 
               </Nav>
 

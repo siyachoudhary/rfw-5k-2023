@@ -241,3 +241,11 @@ button {
         margin-right: 0vw;
     }
 }
+
+.requirements{
+    color: #acacac;
+    font-size: 2vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }

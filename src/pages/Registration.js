@@ -9,7 +9,7 @@ export const Registration = () => {
     const [submitDisabled, setSubmitDisabled] = useState(true);
     const filledOut = useRef(false);
     const [paid, setPaid] = useState(false);
-    const [submitButtonText, setsubmitButtonText] = useState("Submit (Pay and Enter Info First)");
+    const [submitButtonText, setsubmitButtonText] = useState("Submit (Payment and Information Required)");
 
 
 
@@ -61,12 +61,12 @@ export const Registration = () => {
 
         else if(paid) {
             setSubmitDisabled(true);
-            setsubmitButtonText("Submit (Enter Info First)");
+            setsubmitButtonText("Submit (Information Required)");
         }
 
         else if(filledOut.current) {
             setSubmitDisabled(true);
-            setsubmitButtonText("Submit (Pay First)");
+            setsubmitButtonText("Submit (Payment Required)");
         }
         else {
             setSubmitDisabled(true);
@@ -96,9 +96,10 @@ export const Registration = () => {
 
     
     return(
-        <div className = 'registrationSection' id="registration">
+        <div className = 'registrationSection'>
             <div className = 'formSection'>
                 <h1 className = 'labels registrationSectionHeader'>Registration</h1>
+                <p className = "requirements">Payment and Information Required Before Submission</p>
                 <form>
                     <div className="form-row firstname">
                         <div className="form-group col-md-6">
