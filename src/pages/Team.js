@@ -58,7 +58,7 @@ export const Team = () => {
 
             <Card index = "c"
                   name = "Sid Dayaneni"
-                  role = "Co-Founder | Web Dev | Backend"
+                  role = "Co-Founder | Web Dev"
                   linkedIn = "https://www.linkedin.com/in/siddharth-dayaneni-025119262/"
                   github = "https://github.com/SidD11111"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=siddharth.dayaneni@gmail.com&tf=cm"/>
@@ -66,7 +66,7 @@ export const Team = () => {
 
             <Card index = "d" 
                   name = "Ankit Rath"
-                  role = "Co-Founder | Logistics"
+                  role = "Co-Founder"
                   linkedIn = "https://www.linkedin.com/in/ankit-rath-967163249/"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=rathankit27@gmail.com&tf=cm"/>
 
