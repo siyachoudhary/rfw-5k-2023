@@ -19,7 +19,7 @@ footer {
     color: #5ACAFF;
     font-size: 2rem;
     margin-top: 10vh;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
   }
 
   .col-md-6 {
@@ -42,17 +42,17 @@ footer {
   .row {
     
     margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 1vw;
 
   }
 
   .rowBottom {
-    background-color: #000000;
-    box-shadow: 0px 0px 30px 30px #000000;
+    background-color: #060606;
+    box-shadow: 0px 0px 30px 30px #060606;
     text-align: center;
-    margin-top: 10vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    margin-top: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
   }
 
   .sponsor{
@@ -60,7 +60,7 @@ footer {
     margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 50%;
-    width: 90%;
+    width: 70%;
     opacity: .7;
   }
 
@@ -87,7 +87,7 @@ footer {
   }
 
   .mainFooter p{
-    color: #acacac;
+    color: #5a5a5a96;
     font-size: 2vh;
     margin-top: auto;
     margin-bottom: auto;
