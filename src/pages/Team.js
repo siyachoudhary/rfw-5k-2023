@@ -44,7 +44,7 @@ export const Team = () => {
 
             <Card index = "a"
                   name = "Shiven Patel"
-                  role = "Founder"
+                  role = "Co-Founder"
                   linkedIn = "https://www.linkedin.com/in/shiven-patel-467bb4233/"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=patelshiven1@gmail.com&tf=cm"/>
 
