@@ -50,7 +50,7 @@ export const Registration = () => {
         console.log(document.getElementsByClassName('form-control')[3].value);
     
         console.log('success!')
-        alert("Thank you for registering!")
+        alert("Thank you for registering! You will receive an email with more information soon.")
         firstName = "";
         lastName = "";
         email = "";
