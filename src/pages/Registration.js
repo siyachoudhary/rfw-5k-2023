@@ -28,7 +28,11 @@ export const Registration = () => {
 
     }
 
-    async function addRunner(){
+    async function addRunner() {
+
+        setPaid(false);
+        setSubmitDisabled(true);
+
         var firstName = document.getElementsByClassName('form-control')[0].value;
         var lastName = document.getElementsByClassName('form-control')[1].value;
         var email = document.getElementsByClassName('form-control')[2].value;
@@ -54,8 +58,14 @@ export const Registration = () => {
         firstName = "";
         lastName = "";
         email = "";
+        document.getElementsByClassName('form-control')[0].value = "";
+        document.getElementsByClassName('form-control')[1].value = "";
+        document.getElementsByClassName('form-control')[2].value = "";
+        document.getElementsByClassName('form-control')[3].value = "";
+        document.getElementsByClassName('form-control')[4].value = "";
+        document.getElementsByClassName('form-control')[5].value = "";
+        
 
-        setSubmitDisabled(true);
     }
 
     function checkDisable(){
