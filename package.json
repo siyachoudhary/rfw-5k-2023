@@ -1,7 +1,7 @@
 {
   "name": "rfw",
   "version": "0.1.0",
-  "homepage": "runforwater5k.org",
+  "homepage": "http://www.runforwater5k.org",
   "private": true,
   "dependencies": {
     "@paypal/react-paypal-js": "^8.1.0",
