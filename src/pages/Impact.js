@@ -24,13 +24,38 @@ export const Impact = () => {
     }).catch((e) => console.log(e))
   }
 
+  const sectionRef = useRef(null);
+  const [counted, setCounted] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        const isSectionInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+        if (isSectionInView && !counted) {
+          // Start the count-up animation
+          setCounted(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [counted]);
+
   return (
 
       <div className = "Impact" id="impact">
 
           <div className = "impactStats moneyRaised">
 
-            <h1>$<CountUp end = {moneyRaised} duration = {3}></CountUp></h1>
+            {/* <h1>$<CountUp end = {moneyRaised} duration = {3}></CountUp></h1> */}
+            <div ref={sectionRef} className="count-up-section">
+              {counted && <div className="count-up-animation"><h1><CountUp end = {moneyRaised} duration = {2}></CountUp></h1></div>}
+            </div>
             <h3>RAISED</h3>
 
           </div>
@@ -39,28 +64,35 @@ export const Impact = () => {
 
             <div className = "impactStats">
 
-              <h1><CountUp end = {volunteers} duration = {2}></CountUp></h1>
+              {/* <h1><CountUp end = {volunteers} duration = {2}></CountUp></h1> */}
+              {/* <div ref={sectionRef} className="count-up-section"> */}
+                {counted && <div className="count-up-animation"><h1><CountUp end = {volunteers} duration = {2}></CountUp></h1></div>}
+              {/* </div> */}
               <h3>VOLUNTEERS</h3>
 
             </div>
 
             <div className = "impactStats">
 
-              <h1><CountUp end = {runners} duration = {2}></CountUp></h1>
+              {/* <h1><CountUp end = {runners} duration = {2}></CountUp></h1> */}
+              {counted && <div className="count-up-animation"><h1><CountUp end = {runners} duration = {2}></CountUp></h1></div>}
               <h3>RUNNERS</h3>
 
             </div>
 
             <div className = "impactStats">
 
-              <h1><CountUp end = {peopleServed} duration = {2}></CountUp></h1>
+              {/* <h1><CountUp end = {peopleServed} duration = {2}></CountUp></h1> */}
+              {counted && <div className="count-up-animation"><h1><CountUp end = {peopleServed} duration = {2}></CountUp></h1></div>}
+
               <h3>PEOPLE SERVED</h3>
 
             </div>
 
             <div className = "impactStats">
 
-              <h1>1</h1>
+              {/* <h1>1</h1> */}
+              {counted && <div className="count-up-animation"><h1><CountUp end = {1} duration = {2}></CountUp></h1></div>}
               <h3>CAUSE</h3>
 
             </div>
