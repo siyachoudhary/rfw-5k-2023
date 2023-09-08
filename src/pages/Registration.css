@@ -58,6 +58,7 @@ label {
 }
 
 .btn {
+
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -74,16 +75,16 @@ label {
     border-radius: 0.25rem;
 
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
 }
 
 .registrationSection {
     display: flex;
-    /* -ms-flex-wrap: wrap; */
-    /* flex-wrap: wrap; */
-    margin-right: -5px;
-    margin-left: -5px;
     text-align: left;
-    margin-bottom: 20vh;
+    align-self: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5vh;
 }
 
 .formSection {
