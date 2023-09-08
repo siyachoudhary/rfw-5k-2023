@@ -101,7 +101,7 @@ export const Registration = () => {
 
     
     return(
-        <div className = 'registrationSection'>
+        <div className = 'registrationSection' id="registration">
             <div className = 'formSection'>
                 <h1 className = 'labels registrationSectionHeader'>REGISTRATION</h1>
                 <p className = "requirements">Payment and Information Required Before Submission</p>

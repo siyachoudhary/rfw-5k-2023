@@ -1,7 +1,8 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./MyNav.css"
-
+import ScrollspyNav from "react-scrollspy-nav";
+import {NavLink} from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -100,7 +101,7 @@ export const MyNav = () => {
 
     <div>
       
-        <Navbar collapseOnSelect expand = "lg" variant = "dark" className = "myNavbar fixed-top">
+        <Navbar collapseOnSelect expand = "lg" variant = "dark" className = "myNavbar fixed-top navbar px-3">
 
           <Container>
 
@@ -138,28 +139,7 @@ export const MyNav = () => {
 
           </Container>
 
-        </Navbar>   
-
-    {/* <nav id="navbar-example2" expand = "lg" variant = "dark" className = "myNavbar fixed-top">
-      <a class="navbar-brand" href="#home"><img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW"/></a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#impact">Impact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#team">Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#registration">Register</a>
-        </li>
-      </ul>
-    </nav> */}
+        </Navbar> 
 
     </div>
 

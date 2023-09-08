@@ -1,7 +1,6 @@
 .Impact {
-
-    /* min-height: 80vh; */
-
+    height: 100vh;
+    padding-top: 10vh;
 }
 
 .impactStats {
