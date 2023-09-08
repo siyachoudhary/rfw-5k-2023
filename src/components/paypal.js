@@ -36,7 +36,7 @@ export default function Paypal(props) {
             <PayPalScriptProvider 
                 options = {{
                     "client-id":
-                        "AZk95fQY7R-EY_ChjxGXbTffjH4ghaHUZobtQ9ubvnMAZpj3bWezxC7iXIk5YiB27r6Dp6ms4BGlUZXv",
+                        "AV7MfXw_4_h-t_6qpwog3nbLnuykshCPxIzjFTPCvhvwZldCFnmm8pAQK2zbE32tzk3yp3silxw1YFxt",
                     "disable-funding":
                         "paylater",
                     "enable-funding":

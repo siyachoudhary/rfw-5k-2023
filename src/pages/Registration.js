@@ -98,26 +98,26 @@ export const Registration = () => {
     return(
         <div className = 'registrationSection'>
             <div className = 'formSection'>
-                <h1 className = 'labels registrationSectionHeader'>REGISTRATION</h1>
-                <p className = "requirements">Payment & Information Required Before Submission</p>
+                <h1 className = 'labels registrationSectionHeader'>Registration</h1>
+                <p className = "requirements">Payment and Information Required Before Submission</p>
                 <form>
                     <div className="form-row firstname">
                         <div className="form-group col-md-6">
-                            <label className = 'labels'>FIRST NAME</label>
-                            <input type="firstName" className="form-control fn" id="firstName" placeholder="John"/>
+                            <label className = 'labels'>First Name</label>
+                            <input type="firstName" className="form-control fn" id="firstName" placeholder="First Name"/>
                         </div>
 
                         <div className="form-group col-md-6">
-                            <label className = 'labels'>LAST NAME</label>
-                            <input type="lastName" className="form-control ln" id="lastName" placeholder="Doe"/>
+                            <label className = 'labels'>Last Name</label>
+                            <input type="lastName" className="form-control ln" id="lastName" placeholder="Last Name"/>
                         </div>
                     </div>
 
                     <div className="form-row">
                         <div className="form-group email">
                             <div className="form-group col-md-6 email">
-                                    <label className = 'labels'>EMAIL</label>
-                                    <input type="email" className="form-control" id="email" placeholder="johndoe@email.com"/>
+                                    <label className = 'labels'>Email</label>
+                                    <input type="email" className="form-control" id="email" placeholder="example@gmail.com"/>
                             </div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@ export const Registration = () => {
 
                     <div className="form-row">
                         <div className="form-group col-md-6 gendersection">
-                            <label className = 'labels'>GENDER</label>
+                            <label className = 'labels'>Gender</label>
                                 <select id="inputState" className="form-control gen">
                                     <option selected>Choose...</option>
                                     <option>Male</option>
@@ -137,7 +137,7 @@ export const Registration = () => {
 
 
                         <div className="form-group col-md-2 agesection">
-                            <label className = 'labels'>AGE</label>
+                            <label className = 'labels'>Age</label>
                                 <select id="inputState" className="form-control age">
                                     <option selected>Choose...</option>
                                     <option>8 and under</option>
@@ -155,7 +155,7 @@ export const Registration = () => {
 
 
                         <div className="form-group col-md-4 sizesection">
-                            <label className = 'labels'>SIZE</label>
+                            <label className = 'labels'>Shirt Size</label>
                             <select id="inputState" className="form-control size">
                                 <option selected>Choose...</option>
                                 <option>XS</option>
