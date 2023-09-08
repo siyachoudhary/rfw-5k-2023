@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import db from './firebase.config';
 import {useState,useEffect} from 'react';
 import CountUp from "react-countup";
-import VisibilitySensor from 'react-visibility-sensor';
 
 export const Impact = () => {
 
@@ -30,15 +29,8 @@ export const Impact = () => {
       <div className = "Impact" id="impact">
 
           <div className = "impactStats moneyRaised">
-            <h1>
-              <CountUp end={moneyRaised} redraw={true} duration={2}>
-                {({ countUpRef, start }) => (
-                    <VisibilitySensor onChange={start} delayedCall>
-                        <span ref={countUpRef} />
-                    </VisibilitySensor>
-                )}
-              </CountUp>
-            </h1>
+
+            <h1>$<CountUp end = {moneyRaised} duration = {3}></CountUp></h1>
             <h3>RAISED</h3>
 
           </div>
@@ -47,39 +39,21 @@ export const Impact = () => {
 
             <div className = "impactStats">
 
-              <h1><CountUp end={volunteers} redraw={true} duration={2}>
-                {({ countUpRef, start }) => (
-                    <VisibilitySensor onChange={start} delayedCall>
-                        <span ref={countUpRef} />
-                    </VisibilitySensor>
-                )}
-              </CountUp></h1>
+              <h1><CountUp end = {volunteers} duration = {2}></CountUp></h1>
               <h3>VOLUNTEERS</h3>
 
             </div>
 
             <div className = "impactStats">
 
-              <h1><CountUp end={runners} redraw={true} duration={2}>
-                {({ countUpRef, start }) => (
-                    <VisibilitySensor onChange={start} delayedCall>
-                        <span ref={countUpRef} />
-                    </VisibilitySensor>
-                )}
-              </CountUp></h1>
+              <h1><CountUp end = {runners} duration = {2}></CountUp></h1>
               <h3>RUNNERS</h3>
 
             </div>
 
             <div className = "impactStats">
 
-              <h1><CountUp end={peopleServed} redraw={true} duration={2}>
-                {({ countUpRef, start }) => (
-                    <VisibilitySensor onChange={start} delayedCall>
-                        <span ref={countUpRef} />
-                    </VisibilitySensor>
-                )}
-              </CountUp></h1>
+              <h1><CountUp end = {peopleServed} duration = {2}></CountUp></h1>
               <h3>PEOPLE SERVED</h3>
 
             </div>
