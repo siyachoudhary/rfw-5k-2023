@@ -118,7 +118,7 @@ export const Registration = () => {
 
     
     return(
-        <div className = 'registrationSection'>
+        <div className = 'registrationSection' id="registration">
             <div className = 'formSection'>
                 <h1 className = 'labels registrationSectionHeader'>REGISTRATION</h1>
                 <p className = "desc">Registration Cost is $32 per person</p>

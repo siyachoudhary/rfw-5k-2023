@@ -1,3 +1,8 @@
+#about{
+  height: 100vh;
+  padding-top: 10vh;
+}
+
 .Gradient {
     
   background-image: var(--gradient);

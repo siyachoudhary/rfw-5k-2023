@@ -8,14 +8,18 @@
 
 .container { max-width: 100vw; }
 
-.navItem {
+.nav-item {
 
   margin-left: 2vh;
   margin-right: 2vh;
   font-size: 2vh;
   text-align: center;
-  font-family: var(--norm);
 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #0d6efd;
 }
 
 .toggleBtn {
@@ -45,6 +49,14 @@
 }
 
 @media screen and (max-width: 991px) {
+
+  #responsive-navbar-nav {
+    left: 0;
+  }
+  
+  .nav-link{
+    text-align: right;
+  }
 
   .navItem {
 

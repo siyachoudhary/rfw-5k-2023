@@ -1,7 +1,8 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./MyNav.css"
-
+import ScrollspyNav from "react-scrollspy-nav";
+import {NavLink} from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -54,9 +55,7 @@ export const MyNav = () => {
 
     setY(window.y);
 
-  };
-
-  
+  }; 
 
   useEffect(() => {
 
@@ -102,11 +101,11 @@ export const MyNav = () => {
 
     <div>
       
-        <Navbar collapseOnSelect expand = "lg" variant = "dark" className = "myNavbar fixed-top" >
+        <Navbar collapseOnSelect expand = "lg" variant = "dark" className = "myNavbar fixed-top navbar px-3">
 
           <Container>
 
-          <Navbar.Brand href = "#home"> <img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW" className = " " /> </Navbar.Brand>
+          <Navbar.Brand href = "#home"> <img src = {process.env.PUBLIC_URL + "/assets/rfw.png"} alt = "RFW"/> </Navbar.Brand>
             
             <button className = "navbar-toggler second-button toggleBtn" type = "button" data-toggle = "collapse" data-target = "#responsive-navbar-nav"
               aria-controls = "responsive-navbar-nav" aria-expanded = "false" aria-label = "Toggle navigation" onClick = {toggleNav}>
@@ -118,35 +117,43 @@ export const MyNav = () => {
 
               <Nav className = "me-auto" />
 
-              <Nav className = "links">
-
-                <CustomLink href = {"#home"}>Home</CustomLink>
-                <CustomLink href = {"#about"}>About</CustomLink>
-                <CustomLink href = {"#impact"}>Impact</CustomLink>
-                <CustomLink href = {"#team"}>Team</CustomLink>
-                <CustomLink href = {"#registration"}>Register</CustomLink>
-
+              <Nav className = "links"  id="navigation">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#impact">Impact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#registration">Register</a>
+                </li>
               </Nav>
 
             </Navbar.Collapse>
 
           </Container>
 
-        </Navbar>   
+        </Navbar> 
 
     </div>
 
   )
 
   function CustomLink({href, children, ...props}){
-    const path = window.location.pathname
+    const path = window.location.hash
+    console.log(path)
     return (
         path === href ?
-        <Nav.Link href={href} {...props} className={"navItem active"}>{children}</Nav.Link>
+        <Nav.Link href={href} {...props} className={"navItem"}>{children}</Nav.Link>
         :
         <Nav.Link href={href} {...props} className = "navItem">{children}</Nav.Link>
     )
-
-  }
+}
 
 }
