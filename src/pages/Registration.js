@@ -11,7 +11,21 @@ export const Registration = () => {
     const [paid, setPaid] = useState(false);
     const [submitButtonText, setsubmitButtonText] = useState("Submit");
 
+    async function updateStats(){
 
+        var moneyRaised = db.collection('impact').doc('stats').get().then((doc) => {
+            moneyRaised = doc.data().money;
+        })
+        var runners = db.collection('impact').doc('stats').get().then((doc) => {
+            runners = doc.data().runners;
+        })
+
+        const updateStats = await db.collection('impact').doc('stats').update({
+            money: moneyRaised + 30.4, 
+            runners: runners + 1
+        })
+
+    }
 
     async function addRunner(){
         var firstName = document.getElementsByClassName('form-control')[0].value;
@@ -28,7 +42,9 @@ export const Registration = () => {
             gender: gender,
             age: age,
             size: size
-          });
+        });
+
+        updateStats();
     
         console.log(document.getElementsByClassName('form-control')[3].value);
     
@@ -104,7 +120,7 @@ export const Registration = () => {
         <div className = 'registrationSection'>
             <div className = 'formSection'>
                 <h1 className = 'labels registrationSectionHeader'>REGISTRATION</h1>
-                <p className = "requirements">Payment and Information Required Before Submission</p>
+                <p className = "requirements">$32 Payment and Information Required Before Submission</p>
                 <form>
                     <div className="form-row firstname">
                         <div className="form-group col-md-6">
