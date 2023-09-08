@@ -12,7 +12,7 @@ function App () {
 
   return (
 
-    <div className = "App">
+    <div className = "App" >
 
       <MyNav />
 
@@ -22,11 +22,13 @@ function App () {
         <Route path = "/rfw-5k-2023/team" element = {<Team/>}></Route>
       </Routes> */}
 
-      <Home />
-      <About />
-      <Impact />
-      <Team />
-      <Registration/>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <Home />
+        <About />
+        <Impact />
+        <Team />
+        <Registration/>
+      </div>
 
       <Footer />
 
