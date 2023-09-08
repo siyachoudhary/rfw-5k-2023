@@ -11,7 +11,22 @@ export const Registration = () => {
     const [paid, setPaid] = useState(false);
     const [submitButtonText, setsubmitButtonText] = useState("Submit");
 
+    async function updateStats(){
 
+        var moneyRaised = db.collection('impact').doc('stats').get().then((doc) => {
+            moneyRaised = doc.data().money;
+
+            var runners = db.collection('impact').doc('stats').get().then((doc) => {
+                runners = doc.data().runners;
+
+                const updateStats = db.collection('impact').doc('stats').update({
+                    money: parseFloat(moneyRaised) + parseFloat(30.4), 
+                    runners: parseInt(runners) + parseInt(1)
+                })
+            })
+        })
+
+    }
 
     async function addRunner(){
         var firstName = document.getElementsByClassName('form-control')[0].value;
@@ -28,12 +43,14 @@ export const Registration = () => {
             gender: gender,
             age: age,
             size: size
-          });
+        });
+
+        updateStats();
     
         console.log(document.getElementsByClassName('form-control')[3].value);
     
         console.log('success!')
-        alert("Thank you for registering. Signup success!")
+        alert("Thank you for registering! You will receive an email with more information soon.")
         firstName = "";
         lastName = "";
         email = "";
@@ -104,6 +121,7 @@ export const Registration = () => {
         <div className = 'registrationSection' id="registration">
             <div className = 'formSection'>
                 <h1 className = 'labels registrationSectionHeader'>REGISTRATION</h1>
+                <p className = "desc">Registration Cost is $32 per person</p>
                 <p className = "requirements">Payment and Information Required Before Submission</p>
                 <form>
                     <div className="form-row firstname">

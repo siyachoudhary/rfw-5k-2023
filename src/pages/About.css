@@ -49,9 +49,15 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  display: flex;
+  /* display: flex; */
   width: 40vw;
   color: rgba(255, 255, 255, 0.85);
+
+}
+
+b {
+
+  color: var(--secondary);
 
 }
 
