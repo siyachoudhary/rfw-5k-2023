@@ -4,7 +4,7 @@ import './paypal.css'
 
 const style = {"layout":"vertical"};
 
-export default function Paypal() {
+export default function Paypal(props) {
     const [divStyles, setDivStyles] = useState({});
 
     // const createOrder = (data, actions) => {
@@ -74,7 +74,14 @@ export default function Paypal() {
                 onApprove={async (data, actions) => {
                     const details = await actions.order.capture();
                     const name = details.payer.name.given_name;
-                    alert("Transaction completed by " + name);
+                    // alert("Transaction completed by " + name);
+                    props.passChildData(true)
+
+                    if(props.filledOut) {
+                        // alert('passing')
+                        props.passDisabled(false);
+                    }
+                    setDivStyles({});
                 }}
                 />
             </PayPalScriptProvider>
