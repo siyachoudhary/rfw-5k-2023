@@ -36,22 +36,22 @@ export const Footer = () => {
           </div>
           <div className='row sponsorsRow sponsors'>
             <div className='col'>
-              <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProj.png"} alt = "RFW" className = "sponsor" /></a>
+              <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/people/king sharby.png"} alt = "RFW" className = "sponsor" /></a>
             </div>
             <div className='col'>
-            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProject.png"} alt = "RFW" className = "sponsor" /></a>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/people/king sharby.png"} alt = "RFW" className = "sponsor" /></a>
             </div>
             <div className='col'>
-            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProject.png"} alt = "RFW" className = "sponsor" /></a>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/people/king sharby.png"} alt = "RFW" className = "sponsor" /></a>
             </div>
             <div className='col'>
-            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProj.png"} alt = "RFW" className = "sponsor" /></a>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/people/king sharby.png"} alt = "RFW" className = "sponsor" /></a>
             </div>
             <div className='col'>
-            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProject.png"} alt = "RFW" className = "sponsor" /></a>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/people/king sharby.png"} alt = "RFW" className = "sponsor" /></a>
             </div>
             <div className='col'>
-            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/sponsors/waterProj.png"} alt = "RFW" className = "sponsor" /></a>
+            <a href="#"><img src = {process.env.PUBLIC_URL + "/assets/people/king sharby.png"} alt = "RFW" className = "sponsor" /></a>
             </div>
           </div>
         <div className='rowBottom'>

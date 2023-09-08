@@ -9,7 +9,7 @@ export const Registration = () => {
     const [submitDisabled, setSubmitDisabled] = useState(true);
     const filledOut = useRef(false);
     const [paid, setPaid] = useState(false);
-    const [submitButtonText, setsubmitButtonText] = useState("Submit (Payment and Information Required)");
+    const [submitButtonText, setsubmitButtonText] = useState("Submit");
 
 
 
@@ -61,12 +61,12 @@ export const Registration = () => {
 
         else if(paid) {
             setSubmitDisabled(true);
-            setsubmitButtonText("Submit (Information Required)");
+            setsubmitButtonText("Submit");
         }
 
         else if(filledOut.current) {
             setSubmitDisabled(true);
-            setsubmitButtonText("Submit (Payment Required)");
+            setsubmitButtonText("Submit");
         }
         else {
             setSubmitDisabled(true);
