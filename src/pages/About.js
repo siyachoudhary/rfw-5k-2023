@@ -18,14 +18,17 @@ export const About = () => {
 
           <p className = "About-text">
 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Mi bibendum neque egestas congue.
-          Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Volutpat odio
-          facilisis mauris sit amet massa vitae. A erat nam at lectus urna duis convallis.
-          Nibh venenatis cras sed felis eget velit aliquet. Volutpat est velit egestas dui.
-          Lacus vel facilisis volutpat est velit egestas dui id. Congue quisque egestas diam
-          in arcu cursus euismod quis. Morbi tristique senectus et netus. Sit amet purus
-          gravida quis blandit turpis cursus. In mollis nunc sed id semper risus.
+          We are Run for Water, a youth-driven nonprofit dedicated to providing clean drinking
+          water to underserved villages in third-world countries. Established by a group of
+          passionate high school students in 2022, our mission is to turn compassion into action.
+          Through annual 5K events, we raise funds and awareness to initiate sustainable water
+          projects in remote communities, transforming lives one drop at a time. Join us in
+          our unwavering commitment to making clean water accessible to all, and be part of
+          a movement that creates lasting change across the globe.
+          <br /> <br />
+          This year, we will host our annual 5K Run & Walk event at <b>Busse Woods Grove 28</b>,
+          on <b>September 24th</b>, and aim to raise <b>$10,000</b> to aid villages in <b>Rajasthan, India</b>.
+
 
           </p>
 

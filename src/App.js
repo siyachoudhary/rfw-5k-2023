@@ -1,11 +1,11 @@
 import './App.css';
 import { MyNav } from './components/MyNav';
+import { Route, Routes } from 'react-router-dom';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Impact } from './pages/Impact';
 import { Team } from './pages/Team';
-import { Route, Routes } from 'react-router-dom';
 import {Registration} from './pages/Registration'
 
 function App () {
@@ -26,7 +26,7 @@ function App () {
       <About />
       <Impact />
       <Team />
-      <Registration/>
+      <Registration />
 
       <Footer />
 

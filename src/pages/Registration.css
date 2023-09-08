@@ -134,11 +134,21 @@ button {
     margin-bottom: 1vh;
 }
 
-.requirements {
+.desc {
+
     color: #acacac;
     font-size: calc(1.25vh + 0.5vw);
     font-family: var(--norm);
     margin-top: auto;
+    text-align: center;
+    margin-bottom: -0.5vh;
+
+}
+
+.requirements {
+    color: #acacac;
+    font-size: calc(1.25vh + 0.5vw);
+    font-family: var(--norm);
     text-align: center;
     margin-bottom: 4vh;
   }
