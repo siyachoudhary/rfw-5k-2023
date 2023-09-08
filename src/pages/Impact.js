@@ -8,10 +8,10 @@ import CountUp from "react-countup";
 
 export const Impact = () => {
 
-  const [moneyRaised, setMoneyRaised] = useState("")
-  const [peopleServed, setPeopleServed] = useState("")
-  const [runners, setRunners] = useState("")
-  const [volunteers, setVolunteers] = useState("")
+  const [moneyRaised, setMoneyRaised] = useState(0)
+  const [peopleServed, setPeopleServed] = useState(0)
+  const [runners, setRunners] = useState(0)
+  const [volunteers, setVolunteers] = useState(0)
 
   useEffect(() => { fetchdata(); }, [])
 
@@ -54,7 +54,7 @@ export const Impact = () => {
 
             {/* <h1>$<CountUp end = {moneyRaised} duration = {3}></CountUp></h1> */}
             <div ref={sectionRef} className="count-up-section">
-              {counted && <div className="count-up-animation"><h1><CountUp end = {moneyRaised} duration = {2}></CountUp></h1></div>}
+              {counted && <div className="count-up-animation"><h1>$<CountUp end = {moneyRaised} duration = {2}></CountUp></h1></div>}
             </div>
             <h3>RAISED</h3>
 
