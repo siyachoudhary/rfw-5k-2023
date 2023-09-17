@@ -127,14 +127,14 @@ button {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent; 
     /* animation: slideInFromBottom 1s; */
-    text-align: left;
+    /* text-align: left; */
 }
 
 .registrationSectionHeader {
     color: var(--gradient);
     font-family: var(--barlow);
     text-align: center;
-    font-size: calc(3.5vh + 1.75vw);
+    font-size: calc(3.5vh + 1.3vw);
     margin-bottom: 1vh;
 }
 
