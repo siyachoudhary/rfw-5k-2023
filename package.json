@@ -1,7 +1,7 @@
 {
   "name": "rfw",
   "version": "0.1.0",
-  "homepage": "https://aryan-cs.github.io/rfw-5k-2023",
+  "homepage": "http://www.runforwater5k.org",
   "private": true,
   "dependencies": {
     "@paypal/react-paypal-js": "^8.1.0",

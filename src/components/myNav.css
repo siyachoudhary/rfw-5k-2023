@@ -17,6 +17,7 @@ body{
   margin-left: 2vh;
   margin-right: 2vh;
   font-size: 2vh;
+  font-family: var(--norm);
   text-align: center;
 
 }
@@ -58,8 +59,9 @@ body{
     left: 0;
   }
 
-  .nav-link{
+  .nav-link {
     text-align: right;
+    font-size: 3vh;
   }
 
   .navItem {

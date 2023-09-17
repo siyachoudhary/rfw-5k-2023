@@ -44,21 +44,21 @@ export const Team = () => {
 
             <Card index = "a"
                   name = "Shiven Patel"
-                  role = "Cofounder"
+                  role = "Co-Founder"
                   linkedIn = "https://www.linkedin.com/in/shiven-patel-467bb4233/"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=patelshiven1@gmail.com&tf=cm"/>
 
 
             <Card index = "b"
                   name = "Aryan Gupta"
-                  role = "Cofounder | Web Dev | Graphics"
+                  role = "Co-Founder | Web Dev | Graphics"
                   linkedIn = "https://www.linkedin.com/in/aryan-g/"
                   github = "https://github.com/aryan-cs"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=aryan05g@gmail.com&tf=cm"/>
 
             <Card index = "c"
                   name = "Sid Dayaneni"
-                  role = "Cofounder | Web Dev"
+                  role = "Co-Founder | Web Dev"
                   linkedIn = "https://www.linkedin.com/in/siddharth-dayaneni-025119262/"
                   github = "https://github.com/SidD11111"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=siddharth.dayaneni@gmail.com&tf=cm"/>
@@ -66,7 +66,7 @@ export const Team = () => {
 
             <Card index = "d" 
                   name = "Ankit Rath"
-                  role = "Cofounder | Logistics"
+                  role = "Co-Founder"
                   linkedIn = "https://www.linkedin.com/in/ankit-rath-967163249/"
                   email = "https://mail.google.com/mail/u/0/?fs=1&to=rathankit27@gmail.com&tf=cm"/>
 

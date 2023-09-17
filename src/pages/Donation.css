@@ -1,0 +1,82 @@
+/* .donationAmount {
+    display: block;
+    font-size: 3vh;
+    line-height: 1.5;
+    color: hsla(0,0%,100%,.55);
+    background-color: var(--dark-grey);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    height: 8vh;
+    /* background-color: red;
+} */
+
+.paymentSection2{
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: left;
+    background-color: red;
+    width: 20vh;
+    /* overflow: hidden; */
+}
+
+.paypalDiv{
+    /* margin: 20px; */
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* position: absolute; */
+}
+
+.donationSection{
+    text-align: center;
+    align-items: center;
+    
+}
+.formSection2{
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+    width: 50vw;
+}
+.registrationSectionHeader2{
+    font-size: calc(3.5vh + 1.75vw);
+    text-align: center;
+    align-self: center;
+    
+}
+
+.amount{
+    font-size: 40px;
+}
+
+.donationValue {
+
+    border-radius: 20px;
+    margin: 1vh;
+    padding: 2vh;
+    width: calc(10vh + 10vw);
+    height: clamp(5vh, 15vh, 30vh);
+    font-size: clamp(0.5vh, 5vh, 8vh);
+    background: linear-gradient(#1e1e1e, #282828) padding-box,
+                linear-gradient(to right, var(--primary), #5dbcff) border-box;
+    border-radius: 3vh;
+    border: 4px solid transparent;
+    transition: 0.25s ease all;
+
+}
+
+.donationValue:hover {
+    border: 4px solid var(--primary);
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+.payment {
+
+    background-color: green;
+
+}

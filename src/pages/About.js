@@ -26,7 +26,7 @@ export const About = () => {
           our unwavering commitment to making clean water accessible to all, and be part of
           a movement that creates lasting change across the globe.
           <br /> <br />
-          This year, we will host our annual 5K Run & Walk event at <b>Busse Woods Grove 28</b>,
+          This year, we will host our annual 5K Run & Walk event at <b>Busse Woods Grove 29</b>,
           on <b>September 24th</b>, and aim to raise <b>$10,000</b> to aid villages in <b>Rajasthan, India</b>.
 
 
