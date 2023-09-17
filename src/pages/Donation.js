@@ -40,15 +40,17 @@ export const Donation = () => {
     return(
         <div className = 'donationSection'>
             <div className = 'formSection2'>
-                <h1 className = 'labels registrationSectionHeader2'>Donation</h1>
+                <h1 className = 'labels registrationSectionHeader2'>DONATE</h1>
                 <p className = "requirements">Choose Donation Amount</p>
-                <button onClick={() => getDonation("1")}>$1</button>
-                <button onClick={() => getDonation("5")}>$5</button>
-                <button onClick={() => getDonation("10")}>$10</button>
-                <button onClick={() => getDonation("25")}>$25</button>
-                <button onClick={() => getDonation("50")}>$50</button>
+                <button className = "donationValue" onClick={() => getDonation("1")}>$1</button>
+                <button className = "donationValue" onClick={() => getDonation("5")}>$5</button>
+                <button className = "donationValue" onClick={() => getDonation("10")}>$10</button>
+                <button className = "donationValue" onClick={() => getDonation("25")}>$25</button>
+                <button className = "donationValue" onClick={() => getDonation("50")}>$50</button>
 
             </div>
+
+            <div className = 'payment'>
 
             <div className = 'paymentSection2'>
                 <div id = "1dono" className = "paypalDiv" style={{visibility: visibilities[0], pointerEvents: pointers[0]}}>
@@ -300,6 +302,8 @@ export const Donation = () => {
                         />
                     </PayPalScriptProvider>
                 </div>
+            </div>
+
             </div>
 
         </div>
