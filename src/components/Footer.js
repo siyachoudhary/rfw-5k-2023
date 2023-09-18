@@ -30,7 +30,7 @@ export const Footer = () => {
 
   return (
     <footer>
-      <div className="container">
+      <div className="container" id = "footerContainer">
           <div className="row">
               <p className='footerTitle'>THANK YOU TO OUR SPONSORS!</p>
           </div>

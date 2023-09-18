@@ -76,8 +76,7 @@ export const Donation = () => {
                         onClick={() => {
                             setTimeout(function () {
                                 if (window.screen.width < 990) {
-                                    document.getElementById("donate").style.marginBottom = "1200px";
-                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                    document.getElementById("footerContainer").style.marginTop = "600px";
                                 }
                                 
                                 // if(elemHeight > 400 && window.screen.width >= 990) {
@@ -131,8 +130,7 @@ export const Donation = () => {
                         onClick={() => {
                             setTimeout(function () {
                                 if (window.screen.width < 990) {
-                                    document.getElementById("donate").style.marginBottom = "1200px";
-                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                    document.getElementById("footerContainer").style.marginTop = "600px";
                                 }
                             }, 2000);
                         }}
@@ -177,8 +175,7 @@ export const Donation = () => {
                         onClick={() => {
                             setTimeout(function () {
                                 if (window.screen.width < 990) {
-                                    document.getElementById("donate").style.marginBottom = "1200px";
-                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                    document.getElementById("footerContainer").style.marginTop = "600px";
                                 }
                             }, 2000);
                         }}
@@ -223,8 +220,7 @@ export const Donation = () => {
                         onClick={() => {
                             setTimeout(function () {
                                 if (window.screen.width < 990) {
-                                    document.getElementById("donate").style.marginBottom = "1200px";
-                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                    document.getElementById("footerContainer").style.marginTop = "600px";
                                 }
                             }, 2000);
                         }}
@@ -269,8 +265,7 @@ export const Donation = () => {
                         onClick={() => {
                             setTimeout(function () {
                                 if (window.screen.width < 990) {
-                                    document.getElementById("donate").style.marginBottom = "1200px";
-                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                    document.getElementById("footerContainer").style.marginTop = "600px";
                                 }
                             }, 2000);
                         }}
