@@ -27,6 +27,8 @@
   font-family: var(--chunky);
   background-color: var(--dark-grey);
   overflow: hidden;
+  width: 100vw;
+  overflow-x: hidden;
   
 }
 

@@ -4,7 +4,8 @@
 } */
 #registration{
     height: 100vh;
-  padding-top: 10vh;
+    padding-top: 10vh;
+    overflow: hidden;
 }
 
 .form-row {
