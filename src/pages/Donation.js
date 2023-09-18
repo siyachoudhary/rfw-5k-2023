@@ -44,6 +44,23 @@ export const Donation = () => {
         console.log(amt)
     }
 
+
+    async function updateStats(amt){
+
+        var moneyRaised = db.collection('impact').doc('stats').get().then((doc) => {
+            moneyRaised = doc.data().money;
+
+            var runners = db.collection('impact').doc('stats').get().then((doc) => {
+                runners = doc.data().runners;
+
+                const updateStats = db.collection('impact').doc('stats').update({
+                    money: parseFloat(moneyRaised) + parseFloat(amt), 
+                })
+            })
+        })
+
+    }
+
     return(
         <div className = 'donationSection' id='donate'>
             <div className = 'formSection2'>
@@ -104,6 +121,7 @@ export const Donation = () => {
                             const details = await actions.order.capture();
                             const name = details.payer.name.given_name;
                             // alert("Transaction completed by " + name);
+                            updateStats(1);
 
                             setDivStyles({});
                         }}
@@ -153,6 +171,7 @@ export const Donation = () => {
                             const details = await actions.order.capture();
                             const name = details.payer.name.given_name;
                             // alert("Transaction completed by " + name);
+                            updateStats(5);
 
                             setDivStyles({});
                         }}
@@ -198,6 +217,7 @@ export const Donation = () => {
                             const details = await actions.order.capture();
                             const name = details.payer.name.given_name;
                             // alert("Transaction completed by " + name);
+                            updateStats(10);
 
                             setDivStyles({});
                         }}
@@ -243,6 +263,7 @@ export const Donation = () => {
                             const details = await actions.order.capture();
                             const name = details.payer.name.given_name;
                             // alert("Transaction completed by " + name);
+                            updateStats(25);
 
                             setDivStyles({});
                         }}
@@ -288,6 +309,7 @@ export const Donation = () => {
                             const details = await actions.order.capture();
                             const name = details.payer.name.given_name;
                             // alert("Transaction completed by " + name);
+                            updateStats(50);
 
                             setDivStyles({});
                         }}
