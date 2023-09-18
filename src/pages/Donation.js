@@ -10,39 +10,46 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 export const Donation = () => {
     const [divStyles, setDivStyles] = useState({});
     const [visibilities, setVisibilities] = useState(["visible", "hidden", "hidden", "hidden", "hidden"]);
+    const [positions, setPositions] = useState([0, 999, 999, 999, 999]);
     const [pointers, setPointers] = useState(["auto", "none", "none", "none", "none"]);
 
 
     function getDonation(amt) {
-        if(amt == "1") {
+        if(amt === "1") {
             setVisibilities(["visible", "hidden", "hidden", "hidden", "hidden"]);
             setPointers(["auto", "none", "none", "none", "none"]);
+            setPositions([0, 999, 999, 999, 999]);
+            
         }
-        if(amt == "5") {
+        if(amt === "5") {
             setVisibilities(["hidden", "visible", "hidden", "hidden", "hidden"]);
             setPointers(["none", "auto", "none", "none", "none"]);
+            setPositions([999, 0, 999, 999, 999]);
         }
-        if(amt == "10") {
+        if(amt === "10") {
             setVisibilities(["hidden", "hidden", "visible", "hidden", "hidden"]);
             setPointers(["none", "none", "auto", "none", "none"]);
+            setPositions([999, 999, 0, 999, 999]);
         }
-        if(amt == "25") {
+        if(amt === "25") {
             setVisibilities(["hidden", "hidden", "hidden", "visible", "hidden"]);
             setPointers(["none", "none", "none", "auto", "none"]);
+            setPositions([999, 999, 999, 0, 999]);
         }
-        if(amt == "50") {
+        if(amt === "50") {
             setVisibilities(["hidden", "hidden", "hidden", "hidden", "visible"]);
             setPointers(["none", "none", "none", "none", "auto"]);
+            setPositions([999, 999, 999, 999, 0]);
         }
         console.log(amt)
     }
 
     return(
-        <div className = 'donationSection'>
+        <div className = 'donationSection' id='donate'>
             <div className = 'formSection2'>
                 <h1 className = 'labels registrationSectionHeader2'>DONATE</h1>
                 <p className = "requirements">Choose Donation Amount</p>
-                <button className = "donationValue" onClick={() => getDonation("1")}>$1</button>
+                <button className = "donationValue" onClick={() => getDonation("1")} autoFocus = {true}>$1</button>
                 <button className = "donationValue" onClick={() => getDonation("5")}>$5</button>
                 <button className = "donationValue" onClick={() => getDonation("10")}>$10</button>
                 <button className = "donationValue" onClick={() => getDonation("25")}>$25</button>
@@ -53,8 +60,8 @@ export const Donation = () => {
             <div className = 'payment'>
 
             <div className = 'paymentSection2'>
-                <div id = "1dono" className = "paypalDiv" style={{visibility: visibilities[0], pointerEvents: pointers[0]}}>
-                <p className = "requirements amount">$1</p>
+                <div id = "1dono" className = "paypalDiv" style={{visibility: visibilities[0], pointerEvents: pointers[0], paddingLeft: positions[0] + "vw"}}>
+                <p className = "requirements amount"> Donate $1 using...</p>
                     <PayPalScriptProvider 
                         options = {{
                             "client-id":
@@ -68,8 +75,10 @@ export const Donation = () => {
                         <PayPalButtons
                         onClick={() => {
                             setTimeout(function () {
-                                var divElement = document.querySelector(".paymentSection");
-                                var elemHeight = divElement.offsetHeight;
+                                if (window.screen.width < 990) {
+                                    document.getElementById("donate").style.marginBottom = "1200px";
+                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                }
                                 
                                 // if(elemHeight > 400 && window.screen.width >= 990) {
                                 //     setDivStyles({marginTop : "-200px"});
@@ -106,8 +115,8 @@ export const Donation = () => {
 
 
 
-                <div id = "5dono" className = "paypalDiv" style={{visibility: visibilities[1], pointerEvents: pointers[1]}}>
-                <p className = "requirements amount">$5</p>
+                <div id = "5dono" className = "paypalDiv" style={{visibility: visibilities[1], pointerEvents: pointers[1], paddingLeft: positions[1] + "vw"}}>
+                <p className = "requirements amount">Donate $5 using...</p>
                     <PayPalScriptProvider 
                         options = {{
                             "client-id":
@@ -121,13 +130,10 @@ export const Donation = () => {
                         <PayPalButtons
                         onClick={() => {
                             setTimeout(function () {
-                                var divElement = document.querySelector(".paymentSection");
-                                var elemHeight = divElement.offsetHeight;
-                                
-                                // if(elemHeight > 400 && window.screen.width >= 990) {
-                                //     setDivStyles({marginTop : "-200px"});
-                                // }
-                                // console.log(document.getElementsByClassName('paymentSection')[0])
+                                if (window.screen.width < 990) {
+                                    document.getElementById("donate").style.marginBottom = "1200px";
+                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                }
                             }, 2000);
                         }}
 
@@ -155,8 +161,8 @@ export const Donation = () => {
                         />
                     </PayPalScriptProvider>
                 </div>
-                <div id = "10dono" className = "paypalDiv" style={{visibility: visibilities[2], pointerEvents: pointers[2]}}>
-                <p className = "requirements amount">$10</p>
+                <div id = "10dono" className = "paypalDiv" style={{visibility: visibilities[2], pointerEvents: pointers[2], paddingLeft: positions[2] + "vw"}}>
+                <p className = "requirements amount">Donate $10 using... </p>
                     <PayPalScriptProvider 
                         options = {{
                             "client-id":
@@ -170,13 +176,10 @@ export const Donation = () => {
                         <PayPalButtons
                         onClick={() => {
                             setTimeout(function () {
-                                var divElement = document.querySelector(".paymentSection");
-                                var elemHeight = divElement.offsetHeight;
-                                
-                                // if(elemHeight > 400 && window.screen.width >= 990) {
-                                //     setDivStyles({marginTop : "-200px"});
-                                // }
-                                // console.log(document.getElementsByClassName('paymentSection')[0])
+                                if (window.screen.width < 990) {
+                                    document.getElementById("donate").style.marginBottom = "1200px";
+                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                }
                             }, 2000);
                         }}
 
@@ -204,8 +207,8 @@ export const Donation = () => {
                         />
                     </PayPalScriptProvider>
                 </div>
-                <div id = "25dono" className = "paypalDiv" style={{visibility: visibilities[3], pointerEvents: pointers[3]}}>
-                <p className = "requirements amount">$25</p>
+                <div id = "25dono" className = "paypalDiv" style={{visibility: visibilities[3], pointerEvents: pointers[3], paddingLeft: positions[3] + "vw"}}>
+                <p className = "requirements amount">Donate $25 using...</p>
                     <PayPalScriptProvider 
                         options = {{
                             "client-id":
@@ -219,13 +222,10 @@ export const Donation = () => {
                         <PayPalButtons
                         onClick={() => {
                             setTimeout(function () {
-                                var divElement = document.querySelector(".paymentSection");
-                                var elemHeight = divElement.offsetHeight;
-                                
-                                // if(elemHeight > 400 && window.screen.width >= 990) {
-                                //     setDivStyles({marginTop : "-200px"});
-                                // }
-                                // console.log(document.getElementsByClassName('paymentSection')[0])
+                                if (window.screen.width < 990) {
+                                    document.getElementById("donate").style.marginBottom = "1200px";
+                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                }
                             }, 2000);
                         }}
 
@@ -253,8 +253,8 @@ export const Donation = () => {
                         />
                     </PayPalScriptProvider>
                 </div>
-                <div id = "50dono" className = "paypalDiv" style={{visibility: visibilities[4], pointerEvents: pointers[4]}}>
-                <p className = "requirements amount">$50</p>
+                <div id = "50dono" className = "paypalDiv" style={{visibility: visibilities[4], pointerEvents: pointers[4], paddingLeft: positions[4] + "vw"}}>
+                <p className = "requirements amount">Donate $50 using...</p>
                     <PayPalScriptProvider 
                         options = {{
                             "client-id":
@@ -268,13 +268,10 @@ export const Donation = () => {
                         <PayPalButtons
                         onClick={() => {
                             setTimeout(function () {
-                                var divElement = document.querySelector(".paymentSection");
-                                var elemHeight = divElement.offsetHeight;
-                                
-                                // if(elemHeight > 400 && window.screen.width >= 990) {
-                                //     setDivStyles({marginTop : "-200px"});
-                                // }
-                                // console.log(document.getElementsByClassName('paymentSection')[0])
+                                if (window.screen.width < 990) {
+                                    document.getElementById("donate").style.marginBottom = "1200px";
+                                    document.getElementsByTagName("footer").style.marginTop = "600px";
+                                }
                             }, 2000);
                         }}
 

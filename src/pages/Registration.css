@@ -101,6 +101,7 @@ label {
     margin-left: 9vw;;
     margin-top: 12vh;
     margin-right: 3vw;
+    z-index: 999;
 }
 
 button {

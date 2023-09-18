@@ -133,6 +133,9 @@ export const MyNav = () => {
                 <li class="nav-item">
                   <a class="nav-link" href="#registration">Register</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#donate">Donate</a>
+                </li>
               </Nav>
 
             </Navbar.Collapse>

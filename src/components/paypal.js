@@ -53,6 +53,10 @@ export default function Paypal(props) {
                         if(elemHeight > 400 && window.screen.width >= 990) {
                             setDivStyles({marginTop : "-200px"});
                         }
+                        else if (window.screen.width < 990) {
+                            setDivStyles({marginTop : "0px", marginBottom: "1200px", backgroundColor: "#0c0c0c"});
+                            document.getElementById("registration").style.marginBottom = "600px";
+                        }
                         // console.log(document.getElementsByClassName('paymentSection')[0])
                     }, 2000);
                   }}
